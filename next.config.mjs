@@ -1,5 +1,4 @@
-
-module.exports = {
+// next.config.mjs
+export default {
   target: 'experimental-serverless-trace',
 };
-
