@@ -1,6 +1,8 @@
 // next.config.mjs
-export default {
+const nextConfig = {
   experimental: {
     serverlessTrace: true,
   },
 };
+
+export default nextConfig;
