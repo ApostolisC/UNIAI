@@ -1,6 +1,6 @@
 import Image from "next/image";
 import '../styles/globals.css';
-import '../components/Layout.tsx';
+import Layout from '../components/Layout';
 
 export default function Home() {
   return (
