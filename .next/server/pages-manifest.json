@@ -2,5 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/blog": "pages/blog.js",
+  "/become-a-partner": "pages/become-a-partner.js",
+  "/uniai-network": "pages/uniai-network.js",
+  "/events": "pages/events.js"
 }

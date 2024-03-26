@@ -1,11 +1,13 @@
 // pages/about.tsx
 
+import Layout from '../components/Layout';
+
 const AboutPage = () => {
   return (
-    <div>
+    <Layout>
       <h1>About Page</h1>
-      <p>This is the About page content.</p>
-    </div>
+      {/* Other page content */}
+    </Layout>
   );
 };
 
