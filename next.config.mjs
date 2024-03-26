@@ -1,6 +1,6 @@
 const nextConfig = {
-  basePath: process.env.NODE_ENV === 'production' ? '/UNIAI' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/UNIAI/' : '',
+  basePath: '/UNIAI',
+  assetPrefix: '/UNIAI/',
   experimental: {
     serverlessTrace: true,
   },
