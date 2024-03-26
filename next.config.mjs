@@ -1,6 +1,4 @@
 const nextConfig = {
-  basePath: '/',
-  assetPrefix: '/',
   experimental: {
     serverlessTrace: true,
   },

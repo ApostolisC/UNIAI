@@ -1,0 +1,1 @@
+globalThis.__RSC_MANIFEST=(globalThis.__RSC_MANIFEST||{});globalThis.__RSC_MANIFEST["/_not-found"]={"moduleLoading":{"prefix":"/_next/","crossOrigin":null},"ssrModuleMapping":{"(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js":{"*":{"id":"(ssr)/./node_modules/next/dist/client/comp
