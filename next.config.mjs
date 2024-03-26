@@ -1,6 +1,6 @@
 const nextConfig = {
-  basePath: '/UNIAI',
-  assetPrefix: '/UNIAI/',
+  basePath: '/',
+  assetPrefix: '/',
   experimental: {
     serverlessTrace: true,
   },
