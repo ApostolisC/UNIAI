@@ -1,7 +1,11 @@
 import React from 'react';
 import Navigation from './Navigation';
 
-const Layout: React.FC = ({ children }) => {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div>
       <Navigation />
