@@ -10,9 +10,5 @@ module.exports = {
 
   // Configure Next.js to export static HTML
   // Learn more: https://nextjs.org/docs/advanced-features/static-html-export
-  output: {
-    // Set the directory where exported files will be written
-    // Adjust the path as needed based on your project structure
-    dir: 'out',
-  },
+  output: 'export',
 };
