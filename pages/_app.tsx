@@ -1,4 +1,4 @@
-import type { AppProps } from 'index';
+import type { AppProps } from './index';
 import "../styles/globals.css";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
