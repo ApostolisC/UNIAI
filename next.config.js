@@ -1,11 +1,11 @@
-// next.config.js
+const isProd = process.env.NODE_ENV === 'production';
+
 module.exports = {
-  // Specify the configuration options
-  // For static HTML export
-  output: {
-    // Set the export target to static HTML
-    // This replaces the need for the `next export` command
-    // Learn more: https://nextjs.org/docs/advanced-features/static-html-export
-    export: true,
-  },
+  // Set the base path for the Next.js application
+  basePath: isProd ? '/UNIAI' : '',
+
+  // Set the asset prefix for the Next.js application
+  assetPrefix: isProd ? '/UNIAI/' : '',
+
+  // Other Next.js configuration options...
 };
