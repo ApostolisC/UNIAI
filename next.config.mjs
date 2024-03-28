@@ -1,6 +1,5 @@
 const nextConfig = {
   output: "export",
-  basePath: '/out',
   // Other configuration options...
 };
 
