@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{\"/become-a-partner\":[]},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":true}"
+self.__NEXT_FONT_MANIFEST='{"pages":{"/become-a-partner":[],"/about":[],"/events":[],"/blog":[],"/":[],"/uniai-network":[]},"app":{},"appUsingSizeAdjust":false,"pagesUsingSizeAdjust":true}';
