@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{"/about":[],"/blog":[],"/become-a-partner":[],"/events":[],"/":[],"/uniai-network":[]},"app":{},"appUsingSizeAdjust":false,"pagesUsingSizeAdjust":true}';
