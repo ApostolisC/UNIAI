@@ -1,5 +1,4 @@
 const nextConfig = {
-  output: "export",
   // Other configuration options...
 };
 
