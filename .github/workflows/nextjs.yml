@@ -90,7 +90,7 @@ jobs:
         with:
           deploy_key: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
           publish_dir: ./out
-          publish_branch: gh-pages
+          publish_branch: [$default-branch]
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
