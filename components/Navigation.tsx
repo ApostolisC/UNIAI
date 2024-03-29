@@ -94,7 +94,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li>
-              <Link href="/become-a-partner">
+              <Link href="/UNIAI/become-a-partner">
                 Γίνε Συνεργάτης
               </Link>
             </li>
