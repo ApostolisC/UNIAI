@@ -36,7 +36,7 @@ const NavContainer = styled.nav`
     content: '';
     position: absolute;
     bottom: -6px; /* Adjust as needed */
-    bottom-width: 2px;
+    //bottom-width: 2px;
     left: 0;
     width: 0; /* Initially no width */
     height: 2px; /* Thickness of underline */
