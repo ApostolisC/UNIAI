@@ -10,8 +10,8 @@ const Navigation = () => {
 
   useEffect(() => {
     // JavaScript code to be executed after component mounts
-    const image1 = document.querySelector(`.${styles.image1}`);
-    const image2 = document.querySelector(`.${styles.image2}`);
+    const image1 = document.querySelector(`.${styles.image1}`) as HTMLElement;
+    const image2 = document.querySelector(`.${styles.image2}`) as HTMLElement;
     if (image1){
       setTimeout(() => {
         image1.style.opacity = '1'; // Set opacity to 1i
