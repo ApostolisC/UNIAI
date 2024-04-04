@@ -1,0 +1,154 @@
+/* components/Navigation.module.css */
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1C1C1C;
+  margin-right: 10px;
+  position: relative;
+  border-bottom: 2px solid #FF8210; /* Add bottom border to main container */
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.container li {
+  margin-right: 10px; /* Add margin between list items */
+  position: relative;
+}
+
+.container .menuItem a {
+  text-decoration: none;
+  color: #FAFAFA;
+  font-weight: bold;
+  position: relative; /* Required for pseudo-element */
+  transition: color 0.3s; /* Smooth transition for color change */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-left: 30px;
+}
+
+.menuItem a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px; /* Adjust as needed */
+  left: 0px;
+  width: 0; /* Initially no width */
+  height: 2px; /* Thickness of underline */
+  background-color: #a754c8; /* Color of underline */
+  transition: width 0.3s; /* Animation for underline */
+}
+
+.container a:hover {
+  color: #FF8210; /* Change color on hover */
+}
+
+.container a:hover::after {
+  left: 0%;
+  width: 100%; /* Expand underline on hover */
+}
+
+.logo {
+  margin-left: 6vw;
+  margin-right: 25vw; /* Adjust spacing between logo and navigation */
+}
+
+.navArrow {
+  padding-left: 6px;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: 9000;
+}
+
+.container .about_us_li a{
+  text-decoration: none;
+  color: #FAFAFA;
+  font-weight: bold;
+  position: relative; /* Required for pseudo-element */
+  transition: color 0.3s; /* Smooth transition for color change */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 10px;
+  left: 5px;
+}
+
+.container .about_us_li .subMenu a{
+  font-size: 14px;
+}
+
+.container .about_us_li .subMenu a:hover{
+  color: #a754c8;
+}
+
+.container .about_us_li a:hover{
+  color: #FF8210;
+}
+
+.container .subMenu {
+  position: absolute; /* Position submenu absolutely */
+  top: calc(100% + 5px); /* Position it below the parent li */
+  list-style: none; /* Remove default list styles */
+  z-index: 1;
+  white-space: normal;
+  background-color: #1C1C1C;
+  padding-bottom: 15px;
+  border-top: 2px solid #FF8210; /* Add top border */
+  left: 15px;
+  right: 5px;
+}
+
+.container li:hover .subMenu {
+  display: block;
+}
+
+#sublink1{
+  border-bottom: 1px solid #FF8210;
+  border-bottom-width: 100%;
+  padding-bottom: 15px;
+}
+.container .subMenu .subMenuLink {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2em;
+  letter-spacing: .6px;
+  padding-top: 15px;
+}
+
+.language_globe{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.image_container {
+  position: relative;
+}
+
+.image_container .image1, .image_container .image2 {
+  position: absolute;
+  opacity:0;
+}
+
+.image_container .image1{
+  left: 10%;
+}
+
+.image_container .image2{
+  left: 27%;
+  margin-top: 30vh;
+  width: 47%;
+}
