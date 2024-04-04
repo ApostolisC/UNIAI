@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import styles from './Navigation.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faGlobe, IconDefinition  } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 
 const Navigation = () => {
@@ -79,9 +79,9 @@ const Navigation = () => {
           </li>
           <li className={styles.language_globe}>
             <Link href="/">
-                <FontAwesomeIcon icon={faGlobe} /> {/* Add globe icon */}
+                <FontAwesomeIcon icon={faGlobe as IconDefinition} /> {/* Add globe icon */}
                 <span className={styles.navArrow}>
-                  <FontAwesomeIcon icon={faAngleDown} />
+                  <FontAwesomeIcon icon={faAngleDown as IconDefinition} />
                 </span>
             </Link>
           </li>
