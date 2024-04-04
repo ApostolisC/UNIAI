@@ -40,7 +40,7 @@ const Navigation = () => {
             <Link href="/">
               Σχετικά με Εμάς
               <span className={styles.navArrow}>
-                <FontAwesomeIcon icon={faAngleDown} />
+                <FontAwesomeIcon icon={faAngleDown as IconDefinition} />
               </span>
             </Link>
 
