@@ -6,6 +6,7 @@ const HomePage = () => {
   return (
     <Layout>
       {/* Other page content */}
+      <p>.</p>
     </Layout>
   );
 };
