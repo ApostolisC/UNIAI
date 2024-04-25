@@ -1,9 +1,12 @@
-// Layout.tsx
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Navigation from '../components/Navigation/navigation';
 import '../styles/globals.css';
 
-const Layout: React.FC = ({ children }) => {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <html lang="en">
       <body className="overflow-auto">
