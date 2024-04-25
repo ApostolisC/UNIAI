@@ -1,6 +1,6 @@
 // pages/about.tsx
 
-import Layout from '../components/Layout';
+import Layout from '../app/layout';
 import '../styles/globals.css';
 
 const AboutPage = () => {
