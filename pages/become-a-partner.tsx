@@ -1,11 +1,12 @@
-import Layout from '../components/Layout';
+import Navigation from '../components/Navigation/navigation';
+import '../styles/globals.css';
 
 const BecomePartner = () => {
   return (
-    <Layout>
-      <h1>Become a Partner</h1>
-      {/* Other page content */}
-    </Layout>
+      <div>
+        <Navigation />
+        <h1>Become a Partner</h1>
+      </div>
   );
 };
 

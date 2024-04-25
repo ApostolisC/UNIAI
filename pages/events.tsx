@@ -1,11 +1,12 @@
-import Layout from '../components/Layout';
+import Navigation from '../components/Navigation/navigation';
+import '../styles/globals.css';
 
 const Events = () => {
   return (
-    <Layout>
+    <div>
+      <Navigation />
       <h1>Events</h1>
-      {/* Other page content */}
-    </Layout>
+    </div>
   );
 };
 

@@ -1,5 +1,5 @@
 {
-  "name": "uniai-website",
+  "name": "uniai2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,28 +8,22 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "next": {
-    "target": "serverless"
-  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "next": "^14.1.4",
-    "react": "^18.2.0",
+    "next": "14.1.4",
+    "react": "^18",
     "react-dom": "^18",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
-    "@types/node": "20.12.3",
-    "@types/react": "18.2.74",
+    "@types/node": "^20",
+    "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.4.19",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "5.4.3"
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5"
   }
 }

@@ -1,11 +1,12 @@
-import Layout from '../components/Layout';
+import Navigation from '../components/Navigation/navigation';
+import '../styles/globals.css';
 
 const Blog = () => {
   return (
-    <Layout>
+    <div>
+      <Navigation />
       <h1>Blog</h1>
-      {/* Other page content */}
-    </Layout>
+    </div>
   );
 };
 
