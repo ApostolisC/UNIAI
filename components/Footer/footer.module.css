@@ -1,0 +1,44 @@
+/* styles.module.css */
+.footerLeft {
+    flex: 0;
+    margin-left: 50px;
+    margin-right: 50vw
+}
+
+.footerRight {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.followUs {
+    margin-top: 10vh;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.footerInput {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: black;
+}
+
+.gdprCheckbox {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.submitButton {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}

@@ -21,6 +21,10 @@ body {
   background-image: linear-gradient(to bottom, #1F2937, #363e49);
 }
 
+footer{
+  padding: 50px;
+  background-color: #FF8210;
+}
 
 @layer utilities {
   .text-balance {
