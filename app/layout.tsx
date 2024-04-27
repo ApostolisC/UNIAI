@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import Navigation from '../components/Navigation/navigation';
-
+import Footer from '../components/Footer/footer';
 
 export default function RootLayout({
   children,
@@ -9,15 +9,18 @@ export default function RootLayout({
 })  {
   return (
     <html lang="en">
-      <body className="h-screen overflow-auto">
+      <body className="">
         {<header className="top-0 mb-10">
             <Navigation />
         </header>}
         <main>
-          <div className="mt-10 min-vh-100">
+          <div className="">
             {children}
           </div>
         </main>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
