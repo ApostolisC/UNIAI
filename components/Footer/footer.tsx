@@ -37,10 +37,10 @@ const Footer = () => {
             {/* Left side */}
             <div className={`${styles.footerLeft} flex flex-col items-center gap-4`}>
                 <div className={styles.footerLogo}>
-                <Image src="/logo3.png" alt="Logo" width={100} height={100} />
+                    <Image src="/logo3.png" alt="Logo" layout='fill' objectFit='contain'/>
                 </div>
-                <header className={styles.followUs}>Follow Us On:</header>
-                <div className="flex gap-4">
+                <h2 className={styles.followUs}>Follow Us On:</h2>
+                <div className="flex gap-6 mr-5">
                 <Link href="http://www.instagram.com/uniai.gr/" className="text-xl text-white hover:text-gray-300"><FontAwesomeIcon icon={faInstagram} /></Link>
                 <Link href="https://www.linkedin.com/company/uniai/" className="text-xl text-white hover:text-gray-300"><FontAwesomeIcon icon={faLinkedin} /></Link>
                 <Link href="http://www.tiktok.com/@uniai.gr" className="text-xl text-white hover:text-gray-300"><FontAwesomeIcon icon={faTiktok} /></Link>
@@ -50,8 +50,9 @@ const Footer = () => {
 
             {/* Right side */}
             <div className={`${styles.footerRight} flex flex-col gap-4`}>
+                <h3 className={styles.formTitle}>UniAI&apos;s Newsletter</h3>
                 <form onSubmit={handleSubmit} className="flex flex-col gap-2">
-                <label htmlFor="firstName">First Name:</label>
+                <label htmlFor="firstName" className="text-xl">First Name:</label>
                 <input
                     type="text"
                     id="firstName"
@@ -61,7 +62,7 @@ const Footer = () => {
                     required
                     className={styles.footerInput}
                 />
-                <label htmlFor="lastName">Last Name:</label>
+                <label htmlFor="lastName" className="text-xl">Last Name:</label>
                 <input
                     type="text"
                     id="lastName"
@@ -71,7 +72,7 @@ const Footer = () => {
                     required
                     className={styles.footerInput}
                 />
-                <label htmlFor="email">Email:</label>
+                <label htmlFor="email" className="text-xl">Email:</label>
                 <input
                     type="email"
                     id="email"
@@ -81,7 +82,8 @@ const Footer = () => {
                     required
                     className={styles.footerInput}
                 />
-                <div className="flex items-center gap-2">
+                <label className="text-xl">GDPR Aggrement</label>
+                <div className="flex items-center gap-2 mb-2 text-sm">
                     <input
                     type="checkbox"
                     id="gdprAgreement"
@@ -90,10 +92,10 @@ const Footer = () => {
                     onChange={handleChange}
                     className={styles.gdprCheckbox}
                     />
-                    <label htmlFor="gdprAgreement">I agree to the GDPR Agreement</label>
+                    <label htmlFor="gdprAgreement">I consent to having this website store my submitted information so they can respond to my inquiry.</label>
                 </div>
                 <button type="submit" className={styles.submitButton}>
-                    Subscribe
+                    Submit
                 </button>
                 </form>
             </div>

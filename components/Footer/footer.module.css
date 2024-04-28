@@ -2,7 +2,7 @@
 .footerLeft {
     flex: 0;
     margin-left: 50px;
-    margin-right: 50vw
+    margin-right: 35vw
 }
 
 .footerRight {
@@ -11,9 +11,15 @@
 }
 
 .followUs {
-    margin-top: 10vh;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 20px;
+    margin-top: 25vh;
+    display: block;
+    width: 10vw;
+    line-height: 1.4;
+    font-family: Arial Black,Gadget,sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
 }
 
 .footerInput {
@@ -22,6 +28,7 @@
     border: 1px solid #ccc;
     font-size: 1rem;
     color: black;
+    margin-bottom: 10px;
 }
 
 .gdprCheckbox {
@@ -31,14 +38,33 @@
 
 .submitButton {
     padding: 0.75rem 1.5rem;
-    background-color: #007bff;
+    background-color: #A754C8;
     color: #fff;
-    border: none;
-    border-radius: 0.25rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
     font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.5s;
 }
 
 .submitButton:hover {
-    background-color: #0056b3;
+    background-color: #FFFFFF;
+    color: black;
+    transition: background-color 0.25s;
+}
+
+.formTitle{
+    font-family: Arial Black,Gadget,sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: 45px;
+
+}
+
+.footerLogo{
+    align-self:flex-start;
+    width: 142px;
+    height: 40px;
+    position: relative
 }
