@@ -1,18 +1,59 @@
 .image_container {
-    position: relative;
-  }
-  
-  .image_container .image1, .image_container .image2 {
-    position: absolute;
-    opacity:0;
-  }
-  
-  .image_container .image1{
-    left: 10%;
-  }
-  
-  .image_container .image2{
-    left: 27%;
-    margin-top: 30vh;
-    width: 47%;
-  }
+  position: relative;
+}
+
+.image_container .image1, .image_container .image2 {
+  position: absolute;
+  opacity:0;
+}
+
+.image_container .image1{
+  left: 10%;
+}
+
+.image_container .image2{
+  left: 0%;
+  width: 47%;
+}
+
+.become_a_partner_button{
+  position: relative;
+  top: 70vh;
+  left: 45vw;
+
+  background-color: #FF8210;
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-style: solid;
+
+  border-width: 0.866667px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-style: solid;
+  border-right-color: rgb(255, 255, 255);
+  border-right-style: solid;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-style: solid;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  text-align: center
+}
+
+.about_us{
+  margin-top: 25px;
+}
+
+.container_logo{
+  align-self: center;
+}
