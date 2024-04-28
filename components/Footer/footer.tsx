@@ -52,51 +52,52 @@ const Footer = () => {
             <div className={`${styles.footerRight} flex flex-col gap-4`}>
                 <h3 className={styles.formTitle}>UniAI&apos;s Newsletter</h3>
                 <form onSubmit={handleSubmit} className="flex flex-col gap-2">
-                <label htmlFor="firstName" className="text-xl">First Name:</label>
-                <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    required
-                    className={styles.footerInput}
-                />
-                <label htmlFor="lastName" className="text-xl">Last Name:</label>
-                <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    required
-                    className={styles.footerInput}
-                />
-                <label htmlFor="email" className="text-xl">Email:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className={styles.footerInput}
-                />
-                <label className="text-xl">GDPR Aggrement</label>
-                <div className="flex items-center gap-2 mb-2 text-sm">
+                    <label htmlFor="firstName" className="text-xl">First Name:</label>
                     <input
-                    type="checkbox"
-                    id="gdprAgreement"
-                    name="gdprAgreement"
-                    checked={formData.gdprAgreement}
-                    onChange={handleChange}
-                    className={styles.gdprCheckbox}
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        value={formData.firstName}
+                        onChange={handleChange}
+                        required
+                        className={styles.footerInput}
                     />
-                    <label htmlFor="gdprAgreement">I consent to having this website store my submitted information so they can respond to my inquiry.</label>
-                </div>
-                <button type="submit" className={styles.submitButton}>
-                    Submit
-                </button>
+                    <label htmlFor="lastName" className="text-xl">Last Name:</label>
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleChange}
+                        required
+                        className={styles.footerInput}
+                    />
+                    <label htmlFor="email" className="text-xl">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        className={styles.footerInput}
+                    />
+                    <label className="text-xl">GDPR Aggrement</label>
+                    <div className="flex items-center gap-2 mb-2 text-sm">
+                        <input
+                        type="checkbox"
+                        id="gdprAgreement"
+                        name="gdprAgreement"
+                        checked={formData.gdprAgreement}
+                        onChange={handleChange}
+                        required
+                        className={styles.gdprCheckbox}
+                        />
+                        <label htmlFor="gdprAgreement">I consent to having this website store my submitted information so they can respond to my inquiry.</label>
+                    </div>
+                    <button type="submit" className={styles.submitButton}>
+                        Submit
+                    </button>
                 </form>
             </div>
             </div>
