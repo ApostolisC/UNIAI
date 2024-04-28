@@ -1,7 +1,33 @@
-/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255,255,255;
+  --background-start-rgb: 32, 32, 32;
+  --background-end-rgb: 32, 32, 32;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 32, 32, 32;
+    --background-end-rgb: 32, 32, 32;
+  }
+}
 
 body {
-  background-color: #202020; /* Light gray with a hint of warmth */
-  color: #FFFFFF;
-  margin: 0px;
+  color: rgb(var(--foreground-rgb));
+  background-image: linear-gradient(to bottom, #1F2937, #363e49);
+}
+
+footer{
+  padding: 50px;
+  background-color: #FF8210;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: normal;
+  }
 }
