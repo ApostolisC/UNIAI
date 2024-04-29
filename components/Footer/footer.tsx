@@ -102,6 +102,23 @@ const Footer = () => {
             </div>
             </div>
 
+            <br />
+            <br />
+
+            <hr />
+
+            <div className="flex justify-center items-center mt-5">
+                <Link href="#" className="mr-4 px-4 py-2 text-center text-white hover:text-[#A754C8] rounded text-[17px] font-bold">About us</Link>
+                <Link href="#" className="mr-4 px-4 py-2 text-center text-white hover:text-[#A754C8] rounded text-[17px] font-bold">Become a Member</Link>
+                <Link href="#" className="px-4 py-2 text-center text-white hover:text-[#A754C8] rounded text-[17px] font-bold">Become a Partner</Link>
+            </div>
+
+            <br />
+
+            <div className="flex justify-center items-center">
+                <p>Copyright © 2023. All rights reserved. Made with {"<"}3 by Team UniAI.</p>
+            </div>
+
         </>
     );
 };
