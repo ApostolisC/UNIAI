@@ -69,7 +69,7 @@ const BecomePartnerPage = () => {
         </div>
       </div>
 
-      <div className="text-center">
+      <div className="text-center mt-[80px]">
         <h3 className="text-5xl font-bold">Benefits</h3>
       </div>
 
