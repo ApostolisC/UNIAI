@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="">
-        {<header className="top-0 mb-10">
+        {<header className="top-0 mb-0">
             <Navigation />
         </header>}
         <main>

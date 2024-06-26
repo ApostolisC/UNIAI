@@ -1,49 +1,107 @@
-/* Navigation.module.css */
+/* Navigation Styles */
 
 .navContainer {
-  display: flex; /* Use flexbox */
-  justify-content: space-between; /* Distribute items evenly along the main axis */
-  margin: 0;
+  display: flex;
+  flex-direction: column; /* Allows stacking of the nav and menu on small screens */
   align-items: center;
-  padding: 10px 0;
-  border-bottom: 2px solid #FF8210;
-  height: 100px;
-  background-color: #1d242e;
+  padding: 20px 0;
+  border-bottom: 2px solid rgb(113, 79, 11);
+  width: 100%; /* Ensure the container spans the full width */
+  background-color: #1C1C1C;
 
+}
+
+.topNav {
+  display: flex;
+  justify-content: space-between; /* Space between logo and navigation/hamburger */
+  align-items: center;
+  width: 100%; /* Ensure the container spans the full width */
+  padding: 0 20px; /* Add padding to the sides */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.logo {
+  margin: 0; /* Remove margins to ensure alignment */
+  margin-left: 5vw;
+  flex-shrink: 0; /* Prevent the logo from shrinking */
+}
+
+.hamburger {
+  display: none; /* Hide by default */
+  cursor: pointer;
 }
 
 .navList {
-  list-style: none;
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  list-style: none; /* Remove bullet points */
   padding: 0;
   margin: 0;
-  display: flex;
+  margin-right: 5vw;
+}
+
+.navListMobile {
+  display: none; /* Hide by default */
+  flex-direction: column; /* Vertical layout */
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin-top: 20px;
+  width: 100%; /* Full width */
+  background-color: #202020; /* Dark background for the mobile menu */
+  color: #fff; /* Light text color for contrast */
+  border-top: 2px solid rgb(113, 79, 11); /* Separate the mobile menu with a border */
+}
+
+.navListMobile li {
+  padding: 10px 20px; /* Add padding to each list item for spacing */
+  border-bottom: 1px solid #202020; /* Optional: add a border between items for better separation */
+  margin-top: 10px;
 }
 
 .navList li {
-  margin-right: 20px; /* Adjust margin as needed */
-  text-decoration: none; /* Remove underline */
+  margin-right: 20px; /* Space between navigation links */
 }
 
 .navLink {
-  margin-right: 20px; /* Adjust spacing between items */
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Use the parent's text color */
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid transparent; /* Prepare for hover effect */
+  padding: 10px 0; /* Add padding to the links */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide any overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis (...) if text is too long */
 }
 
-.navLink:hover{
+.navLink:hover {
   border-bottom: 2px solid #A754C8;
   color: #FF8210;
   transition: color 0.2s ease-in-out;
 }
 
-.navLink {
-  text-decoration: none;
-  color: #FAFAFA;
-  display: inline-flex;
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Show the hamburger menu on small screens */
+    align-items: center;
+  }
+
+  .navList {
+    display: none; /* Hide the horizontal navigation links on small screens */
+  }
+
+  .navListMobile {
+    display: flex; /* Show the vertical navigation links when the hamburger menu is opened */
+  }
+
+  .topNav {
+    flex-direction: row; /* Ensure the logo and hamburger are in a row */
+    justify-content: space-between; /* Space them evenly */
+    width: 100%; /* Full width of the screen */
+  }
 }
 
-.logo {
-  margin-left: 1vw;
+.menu_span{
+  margin-left: 5px;
 }
