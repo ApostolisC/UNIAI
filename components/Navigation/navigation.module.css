@@ -7,6 +7,8 @@
   padding: 20px 0;
   border-bottom: 2px solid rgb(113, 79, 11);
   width: 100%; /* Ensure the container spans the full width */
+  background-color: #1C1C1C;
+
 }
 
 .topNav {
@@ -20,6 +22,7 @@
 
 .logo {
   margin: 0; /* Remove margins to ensure alignment */
+  margin-left: 5vw;
   flex-shrink: 0; /* Prevent the logo from shrinking */
 }
 
@@ -34,6 +37,7 @@
   list-style: none; /* Remove bullet points */
   padding: 0;
   margin: 0;
+  margin-right: 5vw;
 }
 
 .navListMobile {

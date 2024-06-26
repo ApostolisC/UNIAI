@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 const Navigation = () => {
+
     const router = useRouter();
     const [isHovered, setIsHovered] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
