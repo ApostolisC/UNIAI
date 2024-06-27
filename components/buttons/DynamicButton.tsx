@@ -20,7 +20,7 @@ const DynamicButton: React.FC<DynamicButtonProps> = ({
 }) => {
   return (
     <button 
-      className={`px-4 py-2 m-2 text-xl rounded-2xl transition duration-300`}
+      className={`px-4 py-2 m-2 text-xl rounded-2xl transition duration-300 text-nowrap`}
       style={{
         borderColor: borderColor,
         color: textColor,

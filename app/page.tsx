@@ -61,16 +61,30 @@ export default function Page() {
       </div>
 
       {/* Mobile layout */}
-      <div className="md:hidden mx-auto max-w-[80vw] flex flex-col items-center">
-        <Image src="/logo2.png" alt="Logo" width={500} height={300} />
-        <DynamicButton 
-          borderColor="#fff" 
-          textColor="#fff" 
-          backgroundColor="#9b51e0" 
-          hoverColor="#FF8210"
-        >
-          Become a Partner
-        </DynamicButton>
+      <div className="md:hidden mx-auto max-w-[95vw] flex flex-col items-center">
+        <Image src="/logo2.png" alt="Logo" width={500} height={300} className="mt-36 mb-16" />
+        <div className="flex flex-col items-center justify-center space-y-4 mx-auto max-w-[80vw]">
+            <DynamicButton 
+              borderColor="#fff" 
+              textColor="#fff" 
+              backgroundColor="#FF8210" 
+              hoverColor="#D56500"
+              onClick={() => handleRedirect('/become-a-partner')}
+            >
+              Become a Partner
+            </DynamicButton>
+
+            <DynamicButton 
+              borderColor="#fff" 
+              textColor="#fff" 
+              backgroundColor="#FF8210" 
+              hoverColor="#D56500"
+              onClick={() => handleRedirect('https://docs.google.com/forms/d/e/1FAIpQLSexRlDrjpuERqGe-HKXNQ_jtoOVl_45j2NhfWIlQJwnUiIpWw/viewform')}
+            >
+              Participate in Makeathon
+            </DynamicButton>
+          </div>
+          <div className="bg-[#3A1D45] h-[3px] w-[100vw] mt-36"></div>
       </div>
 
       <div className="mt-8">
@@ -97,7 +111,7 @@ export default function Page() {
           content="To create a student organization that promotes and enhances a culture of AI engagement and a strong network for the educational and innovative ecosystem." 
         />
 
-        <div className="mt-16">
+        <div className="mt-20">
           <h1 className="font-quicksand text-4xl font-bold text-center mb-10">Values</h1>
         </div>
       </div>

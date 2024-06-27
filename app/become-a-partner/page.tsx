@@ -10,17 +10,14 @@ import BenefitBox from '../../components/Benefits/box';
 const BecomePartnerPage = () => {
   return (
     <div>
-      <div style={{ backgroundColor: '#A754C8' }} className="rounded-custom p-[13vh]">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+      {/* Purple background section */}
+      <div style={{ backgroundColor: '#A754C8' }} className="rounded-custom p-4 md:p-[13vh] py-[6vh] md:py-[13vh]">
+        <div className="flex flex-col md:flex-row justify-between">
           {/* Left div: Title and Button */}
-
-
-          <div className="md:w-1/2 mb-8 ml-[8vw] md:mb-0 text-center md:text-left">
-            <h2 className="text-[45px] font-bold text-white mb-4 break-keep">
+          <div className="md:w-1/2 mb-8 md:ml-[8vw] md:mb-0 text-left px-4 md:px-0">
+            <h2 className="text-[40px] md:text-[45px] font-bold text-white mb-4">
               For Partners
             </h2>
-            <br />
-
             <DynamicButton 
               borderColor="#fff" 
               textColor="#fff" 
@@ -29,12 +26,10 @@ const BecomePartnerPage = () => {
             >
               Become a Partner
             </DynamicButton>
-
-
           </div>
 
-          {/* Right div: Icon */}
-          <div className="md:w-1/2 flex justify-center mr-[8vw]">
+          {/* Right div: Icon (hidden on mobile) */}
+          <div className="hidden md:flex md:w-1/2 justify-center mr-[8vw]">
             <FontAwesomeIcon 
               icon={faHandshake} 
               className="text-white text-8xl" 
@@ -43,10 +38,10 @@ const BecomePartnerPage = () => {
         </div>
       </div>
 
-      <div className="h-[70px]"></div>
+      <div className="h-[40px] md:h-[70px]"></div>
 
-
-      <div className="container mx-auto px-4 border-l-2 ml-[16vw] w-[70vw] m-2">
+      {/* Main content section */}
+      <div className="container mx-auto px-4 border-l-2 md:ml-[16vw] ml-4 md:w-[70vw] w-[90%] my-2">
         <div className="text-lg text-gray-900 dark:text-gray-200 leading-relaxed">
           <p>
             Ο μη κερδοσκοπικός οργανισμός μας UniAI φιλοδοξεί να αναλάβει μια πληθώρα δράσεων, οι οποίες δίνουν την δυνατότητα για διαφορετικού τύπου συνεργασίες με διάφορους φορείς. 
@@ -64,15 +59,14 @@ const BecomePartnerPage = () => {
           <p className="text-lg text-gray-900 dark:text-gray-200">
             Θα χαρούμε πολύ να συζητήσουμε μαζί σας για μια μακροπρόθεσμη συνεργασία!
           </p>
-
-          <br />
         </div>
       </div>
 
-      <div className="text-center mt-[80px]">
-        <h3 className="text-5xl font-bold">Benefits</h3>
+      <div className="text-center mt-[80px] md:mt-[80px]">
+        <h3 className="text-4xl md:text-5xl font-bold">Benefits</h3>
       </div>
 
+      {/* Benefit Boxes */}
       <BenefitBox 
         icon="/megaphone-white-1.png" 
         title="MARKETING & AWARENESS" 
@@ -84,7 +78,7 @@ const BecomePartnerPage = () => {
       <BenefitBox 
         icon="/network-white-1.png" 
         title="NETWORK & ECOSYSTEM" 
-        text="Όραμά μας είναι να συντελέσουμε στην διαμόρφωση της κουλτούρας του ΑΙ στην Ελλάδα. Θέλουμε να ενισχύσουμε τον διάλογο, την παιδεία και την ανταλλαγή ιδεών γύρω από το AI, δημιουργώντας ένα ευφυές περιβάλλον όπου η καινοτομία μαζί με τη μάθηση είναι η πηγή της πρόοδού και η τεχνητή νοημοσύνη διαδραματίζει καθοριστικό ρόλο στην επίλυση πραγματικών προβλημάτων." 
+        text="Όραμά μας είναι να συντελέσουμε στην διαμόρφωση της κουλτούρας του ΑΙ στην Ελλάδα. Θέλουμε να ενισχύσουμε τον διάλογο, την παιδεία και την ανταλλαγή ιδεών γύρω από το AI, δημιουργώντας ένα ευφυές περιβάλλον όπου η καινοτομία μαζί με τη μάθηση είναι η πηγή της πρόοδός και η τεχνητή νοημοσύνη διαδραματίζει καθοριστικό ρόλο στην επίλυση πραγματικών προβλημάτων." 
         position="right"
         backgroundColor="bg-[#A754C8]"
       />
@@ -106,9 +100,7 @@ const BecomePartnerPage = () => {
         backgroundColor="bg-[#A754C8]"
       />
 
-      <div className="text-center mb-[100px]">
-      </div>
-
+      <div className="text-center mb-[50px] md:mb-[100px]"></div>
     </div>
   );
 };
