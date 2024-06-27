@@ -64,6 +64,7 @@ const BecomePartnerPage = () => {
 
       <div className="text-center mt-[80px] md:mt-[80px]">
         <h3 className="text-4xl md:text-5xl font-bold">Benefits</h3>
+
       </div>
 
       {/* Benefit Boxes */}
