@@ -13,7 +13,7 @@ const AboutUsBox = ({ image, bgcolor, title, content }: {image:any, bgcolor:any,
                     <Image src={image} alt="Uniai logo" width={124} height={124} className="object-center" />
                 </div>
                 <div className="text-left p-5">
-                    <h4 className="text-2xl font-bold mb-5 text-center">{title}</h4>
+                    <h4 className="text-2xl font-bold mb-5 text-center md:text-left">{title}</h4>
                     <p>{content}</p>
                 </div>
             </div>
