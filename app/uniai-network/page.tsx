@@ -52,7 +52,7 @@ const UniAINetwork = () => {
       </div>
 
       <div className="p-6 w-[70vw] mx-auto text-left">
-        <p className="mt-4 text-wrap text-[22px] text-left">Σκοπός της UniAI είναι η σύνδεση ανθρώπων και ιδεών για την προώθηση της καινοτομίας και τη βελτίωση της ανθρώπινης ζωής. Αυτό δεν μπορεί επιτευχθεί χωρίς τη συνεργασία με ανθρώπους και οργανισμούς που συμμερίζονται το όραμα μας. Εκείνοι είναι που αποτελούν το UniAI.net.</p>
+        <p className="mt-4 text-wrap text-[22px] text-left">The purpose of UniAI is to connect people and ideas to promote innovation and improve human life. This cannot be achieved without partnering with people and organisations that share our vision. It is those who make up UniAI.net.</p>
       </div>
 
       <div className="mt-14">
@@ -66,7 +66,7 @@ const UniAINetwork = () => {
           {people.map((person, index) => (
             <PersonCard 
               key={index} 
-              person={person} 
+              person={person}
               borderColor={borderColors[index % borderColors.length]} // Alternates between the defined colors
             />
           ))}
