@@ -1,6 +1,8 @@
 import React, { ReactNode } from 'react';
 import Navigation from '../components/Navigation/navigation';
 import Footer from '../components/Footer/footer';
+import '../styles/globals.css';
+
 
 export default function RootLayout({
   children,

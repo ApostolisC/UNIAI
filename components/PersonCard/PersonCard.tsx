@@ -4,35 +4,53 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+// Extend the Person interface to match your updated structure
 interface Person {
-    image: string;
-    name: string;
-    position: string;
-    linkedin: string;
+  image: string;
+  name: string;
+  university?: string | null; // for members
+  linkedin: string;
+  position?: string | null; // For contrinutors and mentors
 }
 
 interface PersonCardProps {
-    person: Person;
-    borderColor: string;
+  person: Person;
+  borderColor: string;
 }
 
 const PersonCard: React.FC<PersonCardProps> = ({ person, borderColor }) => {
-    return (
-        <div className={`bg-[#111111] rounded-lg border-2 p-6 shadow-md transform transition-transform hover:scale-105`} style={{ borderColor }}>
-            <div className="flex justify-center">
-                <div className={`rounded-full border-2 overflow-hidden`} style={{ borderColor }}>
-                    <Image src={person.image} alt={person.name} width={185} height={185} className="rounded-full" />
-                </div>
-            </div>
-            <h2 className="text-[15px] font-semibold text-left mt-4">{person.name}</h2>
-            <h3 className="text-sm mt-1 text-left text-white font-extralight">{person.position}</h3>
-            <div className="flex justify-left mt-4">
-                <a href={person.linkedin} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faLinkedin} className="text-white text-3xl hover:text-[#FF8210] mb-4" />
-                </a>
-            </div>
+  return (
+    <div 
+      className={`bg-[#111111] rounded-lg border-2 p-6 shadow-md transform transition-transform hover:scale-105`} 
+      style={{ borderColor }}
+    >
+      <div className="flex justify-center">
+        <div className={`rounded-full border-2 overflow-hidden`} style={{ borderColor }}>
+          <Image 
+            src={person.image} 
+            alt={person.name} 
+            width={185} 
+            height={185} 
+            className="rounded-full object-cover" 
+          />
         </div>
-    );
+      </div>
+      <h2 className="text-[15px] font-semibold text-left mt-4">{person.name}</h2>
+      
+      {/* Conditionally render position or university */}
+      {person.position ? (
+        <h3 className="text-sm mt-1 text-left text-white font-extralight">{person.position}</h3>
+      ) : (
+        <h3 className="text-sm mt-1 text-left text-white font-extralight">{person.university}</h3>
+      )}
+
+      <div className="flex justify-left mt-4">
+        <a href={person.linkedin} target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} className="text-white text-3xl hover:text-[#FF8210] mb-4" />
+        </a>
+      </div>
+    </div>
+  );
 };
 
 export default PersonCard;

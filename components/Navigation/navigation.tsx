@@ -30,6 +30,11 @@ const Navigation = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+        setIsMobileSubmenuOpen(false); // Close the submenu as well
+    };
+
     const toggleSubmenu = (isOpen: boolean | ((prevState: boolean) => boolean)) => {
         setIsSubmenuOpen(isOpen);
     };
@@ -38,12 +43,14 @@ const Navigation = () => {
         setIsMobileSubmenuOpen(!isMobileSubmenuOpen);
     };
 
-
     return (
         <nav className="flex flex-col items-center py-5 border-b-2 border-[#71500b] w-full bg-[#1C1C1C]">
             <div className="flex justify-between items-center w-full px-5">
                 <div 
-                    onClick={() => router.push('/')} 
+                    onClick={() => {
+                        router.push('/');
+                        closeMenu();
+                    }} 
                     className="inline-block cursor-pointer transition-opacity duration-200 ease-in-out"
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
@@ -97,34 +104,31 @@ const Navigation = () => {
 
             {isMobileOrTablet && isMenuOpen && (
                 <ul className="flex flex-col list-none mt-5 w-full bg-[#202020] text-white border-t-2 border-[#71500b]">
-                    <li 
-                            onMouseEnter={() => setIsMobileSubmenuOpen(true)}
-                            onMouseLeave={() => setIsMobileSubmenuOpen(false)}
-                            className="py-2 px-5 border-b border-[#202020]"
-                        >
-                            <div className="flex justify-between items-center   ">
-                                <Link href="/" className="">Σχετικά με Εμάς</Link>
-                                <FontAwesomeIcon 
-                                    icon={isMobileSubmenuOpen ? faMinus : faPlus} 
-                                    className=" text-white group-hover:text-[#FF8210] transition-colors duration-200 ease-in-out"
-                                    onClick={toggleMobileSubmenu}
-                                />
-                            </div>
-                            {isMobileSubmenuOpen && (
-                                <ul className="flex flex-col mt-4">
-                                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/meet-the-team">Γνώρισε την Ομάδα μας</Link></li>
-                                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/become-a-member">Γίνε μέλος</Link></li>
-                                </ul>
-                            )}
-                        </li>
-                            
-                    {/*<li className="py-2 px-5 border-b border-[#202020]"><Link href="/" className="block">Σχετικά με Εμάς</Link></li>*/}
-                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/become-a-partner" className="block">Γίνε Συνεργάτης</Link></li>
-                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/uniai-network" className="block">UniAI.net</Link></li>
-                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/events" className="block">Οι Δράσεις μας</Link></li>
-                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/blog" className="block">Αρθογραφία</Link></li>
-                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="https://makeathon.uniai.gr/" className="block">Makeathon</Link></li>
-                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/" className="block">
+                    <li
+                        className="py-2 px-5 border-b border-[#202020]"
+                    >
+                        <div className="flex justify-between items-center">
+                            <Link href="/" onClick={closeMenu}>Σχετικά με Εμάς</Link>
+                            <FontAwesomeIcon 
+                                icon={isMobileSubmenuOpen ? faMinus : faPlus} 
+                                className=" text-white group-hover:text-[#FF8210] transition-colors duration-200 ease-in-out"
+                                onClick={toggleMobileSubmenu}
+                            />
+                        </div>
+                        {isMobileSubmenuOpen && (
+                            <ul className="flex flex-col mt-4">
+                                <li className="py-2 px-5 border-b border-[#202020]"><Link href="/meet-the-team" onClick={closeMenu}>Γνώρισε την Ομάδα μας</Link></li>
+                                <li className="py-2 px-5 border-b border-[#202020]"><Link href="/become-a-member" onClick={closeMenu}>Γίνε μέλος</Link></li>
+                            </ul>
+                        )}
+                    </li>
+
+                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/become-a-partner" onClick={closeMenu}>Γίνε Συνεργάτης</Link></li>
+                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/uniai-network" onClick={closeMenu}>UniAI.net</Link></li>
+                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/events" onClick={closeMenu}>Οι Δράσεις μας</Link></li>
+                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/blog" onClick={closeMenu}>Αρθογραφία</Link></li>
+                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="https://makeathon.uniai.gr/" onClick={closeMenu}>Makeathon</Link></li>
+                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/" onClick={closeMenu}>
                         <FontAwesomeIcon icon={faGlobe} />
                     </Link></li>
                 </ul>

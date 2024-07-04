@@ -3,7 +3,7 @@
 import '@/styles/globals.css';
 import Image from 'next/image';
 import PersonCard from '../../components/PersonCard/PersonCard';
-import people from '../../data/peopleData'; // Ensure you import the people data
+import people from '../../data/mentorsData'; // Ensure you import the people data
 import { useEffect, useState } from 'react';
 
 const UniAINetwork = () => {
