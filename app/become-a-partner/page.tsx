@@ -44,20 +44,20 @@ const BecomePartnerPage = () => {
       <div className="container mx-auto px-4 border-l-2 md:ml-[16vw] ml-4 md:w-[70vw] w-[90%] my-2">
         <div className="text-lg text-gray-900 dark:text-gray-200 leading-relaxed">
           <p>
-            Ο μη κερδοσκοπικός οργανισμός μας UniAI φιλοδοξεί να αναλάβει μια πληθώρα δράσεων, οι οποίες δίνουν την δυνατότητα για διαφορετικού τύπου συνεργασίες με διάφορους φορείς. 
-            <strong className="font-bold"> Μπορείτε να συμβάλλετε στο εγχείρημά μας και στην πραγματοποίηση του οράματός μας με πολλούς τρόπους</strong>, ως:
+          Our non-profit organisation, UniAI, aspires to undertake a multitude of actions that provide the opportunity for different types of collaborations with various entities. 
+            <strong className="font-bold"> You can contribute to our initiative and the realisation of our vision in many ways:</strong>, such as:
           </p>
           <br />
           <ul className="list-disc ml-6 mb-6 text-gray-900 dark:text-gray-200">
-            <li>Δημιουργός προκλήσεων για το Makeathon (διαγωνισμός καινοτομίας με χρήση ΑΙ)</li>
-            <li>Συμμετέχουσα/ων ή ομιλητής/τρια στις εκδηλώσεις μας</li>
-            <li>Χορηγός με αναγνώριση λογότυπου</li>
-            <li>Μέντορας για τα μέλη μας</li>
-            <li>Workshops στα γραφεία σας</li>
-            <li>Δημοσίευση ανοιχτών θέσεων ή μεταπτυχιακής διατριβής μέσα από το δίκτυο μας</li>
+            <li>Challenge creator for the Makeathon (an innovation competition using AI)</li>
+            <li>Participant or Speaker at our events</li>
+            <li>Sponsor with logo recognition</li>
+            <li>Mentor for our members</li>
+            <li>Workshops at your offices</li>
+            <li>Publication open jobs or master’s thesis through our network</li>
           </ul>
           <p className="text-lg text-gray-900 dark:text-gray-200">
-            Θα χαρούμε πολύ να συζητήσουμε μαζί σας για μια μακροπρόθεσμη συνεργασία!
+            We would be delighted to discuss a long-term collaboration with you!
           </p>
         </div>
       </div>
@@ -71,7 +71,7 @@ const BecomePartnerPage = () => {
       <BenefitBox 
         icon="/megaphone-white-1.png" 
         title="MARKETING & AWARENESS" 
-        text="Ως υποστηρικτής του UniAI, θα συμπεριληφθείτε στην ιστοσελίδα μας και επιπλέον θα διαφημίσουμε την εταιρεία σας στις καμπάνιες μας. Έτσι, έχετε την δυνατότητα να ενισχύσετε την παρουσία της εταιρείας σας ανάμεσα στους φοιτητές του λεκανοπεδίου και πέρα από αυτό." 
+        text="As a supporter of UniAI, you will be featured on our website and we will also promote your company in our campaigns. This way, you have the possibility to enhance your company’s presence among the students in the basin and beyond." 
         position="left"
         backgroundColor="bg-[#FF8210]"
       />
@@ -79,7 +79,7 @@ const BecomePartnerPage = () => {
       <BenefitBox 
         icon="/network-white-1.png" 
         title="NETWORK & ECOSYSTEM" 
-        text="Όραμά μας είναι να συντελέσουμε στην διαμόρφωση της κουλτούρας του ΑΙ στην Ελλάδα. Θέλουμε να ενισχύσουμε τον διάλογο, την παιδεία και την ανταλλαγή ιδεών γύρω από το AI, δημιουργώντας ένα ευφυές περιβάλλον όπου η καινοτομία μαζί με τη μάθηση είναι η πηγή της πρόοδός και η τεχνητή νοημοσύνη διαδραματίζει καθοριστικό ρόλο στην επίλυση πραγματικών προβλημάτων." 
+        text="UniAI serves as a meeting point for students, researchers, companies, and startups who share a common passion and interest in artificial intelligence. By becoming a member of this community, you gain the ability to interact and interface with our network." 
         position="right"
         backgroundColor="bg-[#A754C8]"
       />
@@ -88,7 +88,7 @@ const BecomePartnerPage = () => {
         icon="/collaboration-white-1.png" 
         smallerIconSource='/collaboration-white-1.png' // used to use smaller size for the icon 
         title="PROJECT COLLABORATIONS" 
-        text="Η συνεργασία μαζί μας ανοίγει τον δρόμο για πολλούς τύπους αλληλεπίδρασης, όπως η δυνατότητα να γίνετε δημιουργός προκλήσεων για τα Makeathons μας, να συμμετέχετε σε σεμινάρια και ημερίδες ή να φιλοξενήσετε εργαστήρια δικτύωσης με τα μέλη μας. Είμαστε ανοιχτοί σε κάθε είδους πρόταση συνεργασίας και περιμένουμε να ακούσουμε τις δημιουργικές σας ιδέες!" 
+        text="Collaborating with us opens the door to various types of interaction, such as the possibility of creating challenges for our Makeathons, participating in seminars and conferences, or hosting networking workshops with our members. We are open to all kinds of collaboration proposals and look forward to hearing your creative ideas!" 
         position="left"
         backgroundColor="bg-[#FF8210]"
       />
@@ -96,7 +96,7 @@ const BecomePartnerPage = () => {
       <BenefitBox 
         icon="/talent-pool-white-1.png" 
         title="STUDENT TALENT POOL" 
-        text="Αποκτήστε πρόσβαση στο δίκτυο των μελών μας που αποτελείται από κινητοποιημένους φοιτητές διαφορετικών ειδικεύσεων, οι οποίοι όμως όλοι μοιράζονται κατανόηση των νέων τεχνολογιών και πάθος για την καινοτομία και τον πειραματισμό με αυτές." 
+        text="Access our member network of motivated students from diverse backgrounds, all of whom share an understanding of new technologies and a passion for innovation and experimentation with them" 
         position="right"
         backgroundColor="bg-[#A754C8]"
       />

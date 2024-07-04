@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       borderRadius: {
         'custom': '0px 0px 434px 20px',
+        'custom2': '0px 0px 20px 434px',
       },
 
     },
