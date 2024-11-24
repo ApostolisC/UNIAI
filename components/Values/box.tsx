@@ -18,8 +18,7 @@ const ValuesBox = ({ image, title, content }: { image: any, title: any, content:
                 src={image} 
                 alt="Image" 
                 width={imageWidth} 
-                height={imageHeight} 
-                layout="responsive"
+                height={imageHeight}
                 className="transition-transform duration-3000 transform group-hover:scale-100" 
             />
             <div 
