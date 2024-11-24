@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 interface Person {
     image: string;
@@ -31,7 +32,7 @@ const PersonCard: React.FC<PersonCardProps> = ({ person, borderColor }) => {
             <h3 className="text-sm mt-1 text-left text-white font-extralight">{person.position}</h3>
             <div className="flex justify-left mt-5 mb-5">
                 <a href={person.linkedin} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faLinkedin} className="text-white text-3xl hover:text-[#FF8210]" />
+                    <FontAwesomeIcon icon={faLinkedin as IconProp} className="text-white text-3xl hover:text-[#FF8210]" />
                 </a>
             </div>
         </div>

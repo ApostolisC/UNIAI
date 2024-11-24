@@ -1,4 +1,7 @@
 'use client'
+
+import { useTranslation } from 'react-i18next';
+
 import React from 'react';
 import '../styles/globals.css';
 import Image from 'next/image';
@@ -6,10 +9,10 @@ import AboutUsBox from '../components/AboutUs/box';
 import ValuesBox from '../components/Values/box';
 import DynamicButton from '@/components/buttons/DynamicButton';
 
-
 export default function Page() {
 
-
+  const { t } = useTranslation('common');
+  
   const handleRedirect = (url: string) => {
     window.location.href = url; // Redirects to the specified URL
   };
@@ -34,6 +37,7 @@ export default function Page() {
           <div style={{ width: '45vw', height: '45vh' }} className="relative">
             <Image src="/logo2.png" alt="Logo" layout="fill" objectFit="contain" />
           </div>
+          <p>{t('hello')}</p>
 
           <div className='flex flexcol'>
             <DynamicButton 
@@ -44,16 +48,6 @@ export default function Page() {
               onClick={() => handleRedirect('/become-a-partner')}
             >
               Become a Partner
-            </DynamicButton>
-
-            <DynamicButton 
-              borderColor="#fff" 
-              textColor="#fff" 
-              backgroundColor="#FF8210" 
-              hoverColor="#D56500"
-              onClick={() => handleRedirect('https://docs.google.com/forms/d/e/1FAIpQLSexRlDrjpuERqGe-HKXNQ_jtoOVl_45j2NhfWIlQJwnUiIpWw/viewform')}
-            >
-              Participate in Makeathon
             </DynamicButton>
           </div>
 
@@ -152,3 +146,6 @@ export default function Page() {
     </>
   );
 }
+
+
+

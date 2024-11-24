@@ -2,10 +2,11 @@
 
 import React from 'react';
 import '../../styles/globals.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHandshake } from '@fortawesome/free-solid-svg-icons';
 import DynamicButton from '@/components/buttons/DynamicButton';
 import BenefitBox from '../../components/Benefits/box';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHandshake  } from '@fortawesome/free-solid-svg-icons';
 
 const BecomePartnerPage = () => {
   return (

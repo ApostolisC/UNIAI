@@ -3,22 +3,15 @@ import Navigation from '../components/Navigation/navigation';
 import Footer from '../components/Footer/footer';
 import '../styles/globals.css';
 
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-})  {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="">
-        {<header className="top-0 mb-0">
-            <Navigation />
-        </header>}
+      <body>
+        <header className="top-0 mb-0">
+          <Navigation />
+        </header>
         <main>
-          <div className="">
-            {children}
-          </div>
+          <div>{children}</div>
         </main>
         <footer>
           <Footer />
@@ -26,4 +19,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-};
+}
