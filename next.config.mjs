@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = { 
-    reactStrictMode: false,
-    i18n: {
-        locales: ["gr", "en"],
-        defaultLocale: "gr",
-        localeDetection: false
-        }
- };
+import i18nextConfig from './next-i18next.config.mjs';
 
+const nextConfig = {
+    transpilePackages: ['@fortawesome/fontawesome-svg-core'],
+    reactStrictMode: true,
+    i18n: i18nextConfig.i18n, 
+  };
+  
 export default nextConfig;
