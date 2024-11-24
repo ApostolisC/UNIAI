@@ -1,7 +1,10 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import React, { ReactNode } from 'react';
 import Navigation from '../components/Navigation/navigation';
 import Footer from '../components/Footer/footer';
 import '../styles/globals.css';
+
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
