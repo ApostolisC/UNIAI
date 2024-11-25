@@ -29,18 +29,24 @@ const Footer = () => {
 
     return (
         <>
-            <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 px-4 md:px-0">
+            <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 px- md:px-">
                 {/* Left side */}
-                <div className="flex flex-col items-center md:items-start gap-4 md:ml-8 mb-10">
+                <div className="flex flex-col items-center md:items-start gap-6  md:ml-8 mb-10">
+
                     <div className="relative w-36 h-10 mb-4 md:mb-0">
-                        <Image src="/logo3.png" alt="Logo" layout="fill" objectFit="contain" />
+                        <Image
+                            src="/logo3.png"
+                            alt="Logo"
+                            fill
+                            className="object-contain"
+                        />
                     </div>
-                    <h2 className="text-white text-2xl font-semibold text-center md:text-left">Follow Us On:</h2>
+                    <h2 className="text-white text-3xl font-semibold text-center md:text-left">Follow Us On:</h2>
                     <div className="flex gap-4 md:gap-6">
-                        <Link href="http://www.instagram.com/uniai.gr/" className="text-xl text-white hover:text-gray-300"><FontAwesomeIcon icon={faInstagram} /></Link>
-                        <Link href="https://www.linkedin.com/company/uniai/" className="text-xl text-white hover:text-gray-300"><FontAwesomeIcon icon={faLinkedin} /></Link>
-                        <Link href="http://www.tiktok.com/@uniai.gr" className="text-xl text-white hover:text-gray-300"><FontAwesomeIcon icon={faTiktok} /></Link>
-                        <Link href="https://www.facebook.com/uniAI.gr" className="text-xl text-white hover:text-gray-300"><FontAwesomeIcon icon={faFacebook} /></Link>
+                        <Link href="http://www.instagram.com/uniai.gr/" className="text-3xl text-white hover:text-gray-300"><FontAwesomeIcon icon={faInstagram} /></Link>
+                        <Link href="https://www.linkedin.com/company/uniai/" className="text-3xl text-white hover:text-gray-300"><FontAwesomeIcon icon={faLinkedin} /></Link>
+                        <Link href="http://www.tiktok.com/@uniai.gr" className="text-3xl text-white hover:text-gray-300"><FontAwesomeIcon icon={faTiktok} /></Link>
+                        <Link href="https://www.facebook.com/uniAI.gr" className="text-3xl text-white hover:text-gray-300"><FontAwesomeIcon icon={faFacebook} /></Link>
                     </div>
                 </div>
 

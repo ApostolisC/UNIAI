@@ -1,9 +1,9 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import PersonCard from '../../components/PersonCard/PersonCard';
-import { Team } from '../../data/teams'; // Adjust path as needed
-import { Person } from '../../data/uniaiMembersData'; // Adjust path as needed
+import PersonCard from '@/src/components/PersonCard/PersonCard';
+import { Team } from '@/data/teams'; // Adjust path as needed
+import { Person } from '@/data/uniaiMembersData'; // Adjust path as needed
 
 const MeetTheTeamPage = () => {
     const [teams, setTeams] = useState<Team[]>([]);
@@ -28,8 +28,8 @@ const MeetTheTeamPage = () => {
     }, []); // Added empty dependency array to avoid repeated event listeners
 
     useEffect(() => {
-        import('../../data/teams').then((module) => setTeams(module.teams));
-        import('../../data/uniaiMembersData').then((module) => setPeople(module.default));
+        import('@/data/teams').then((module) => setTeams(module.teams));
+        import('@/data/uniaiMembersData').then((module) => setPeople(module.default));
 
         // Cleanup
         return () => {

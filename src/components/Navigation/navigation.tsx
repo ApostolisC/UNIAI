@@ -6,14 +6,19 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faGlobe, faAngleDown, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
+import { redirect } from 'next/navigation'
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
-const Navigation = () => {
+
+const Navigation:React.FC = () => {
     const router = useRouter();
     const [isHovered, setIsHovered] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
     const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
     const [isMobileSubmenuOpen, setIsMobileSubmenuOpen] = useState(false);
+    const [isLanguageSwitcherHovered, setLanguageSwitcherHovered] = useState(false);
+
 
     useEffect(() => {
         const handleResize = () => {
@@ -43,6 +48,11 @@ const Navigation = () => {
         setIsMobileSubmenuOpen(!isMobileSubmenuOpen);
     };
 
+    const handleLanguageChange = (locale: string) => {
+        router.push(`/${locale}`);
+        
+    };
+
     return (
         <nav className="flex flex-col items-center py-5 border-b-2 border-[#71500b] w-full bg-[#1C1C1C]">
             <div className="flex justify-between items-center w-full px-5">
@@ -59,7 +69,7 @@ const Navigation = () => {
                     {isMobileOrTablet ? (
                         <Image src="/logo_small.png" alt="Logo" width={45} height={45} className="m-0 ml-[5vw] flex-shrink-0" />
                     ) : (
-                        <Image src="/logo.png" alt="Logo" width={130} height={45} className="m-0 ml-[5vw] flex-shrink-0" />
+                        <Image src="/logo.png" alt="Logo" width={130} height={45} className="m-0 ml-[5vw] flex-shrink-0 overflow-auto" priority />
                     )}
                 </div>
 
@@ -95,9 +105,34 @@ const Navigation = () => {
                         <li className="mr-7"><Link href="/events" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">Our Events</Link></li>
                         <li className="mr-7"><Link href="/blog" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">Articles</Link></li>
                         <li className="mr-7"><Link href="https://makeathon.uniai.gr/" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">Makeathon</Link></li>
-                        <li className="mr-7"><Link href="/" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">
-                            <FontAwesomeIcon icon={faGlobe} />
-                        </Link></li>
+                        <div
+                            className="relative inline-block"
+                            onMouseEnter={() => setLanguageSwitcherHovered(true)}
+                            onMouseLeave={() => setLanguageSwitcherHovered(false)}
+                        >
+                            {/* Globe Icon */}
+                            <div className="p-4 rounded-full shadow-md cursor-pointer">
+                                <FontAwesomeIcon icon={faGlobe as IconProp} className="text-white" />
+                            </div>
+
+                            {/* Language Buttons */}
+                            {isLanguageSwitcherHovered && (
+                                <div className="absolute top-full mt-0 flex flex-col items-center gap-1 bg-[#222222] p-2 rounded-md shadow-md z-10">
+                                    <button
+                                        className="text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                                        onClick={() => handleLanguageChange('en')}
+                                    >
+                                        English
+                                    </button>
+                                    <button
+                                        className="text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                                        onClick={() => handleLanguageChange('el')}
+                                    >
+                                        Ελληνικά
+                                    </button>
+                                </div>
+                            )}
+                        </div>
                     </ul>
                 )}
             </div>
@@ -128,9 +163,6 @@ const Navigation = () => {
                     <li className="py-2 px-5 border-b border-[#202020]"><Link href="/events" onClick={closeMenu}>Our Events</Link></li>
                     <li className="py-2 px-5 border-b border-[#202020]"><Link href="/blog" onClick={closeMenu}>Articles</Link></li>
                     <li className="py-2 px-5 border-b border-[#202020]"><Link href="https://makeathon.uniai.gr/" onClick={closeMenu}>Makeathon</Link></li>
-                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/" onClick={closeMenu}>
-                        <FontAwesomeIcon icon={faGlobe} />
-                    </Link></li>
                 </ul>
             )}
         </nav>

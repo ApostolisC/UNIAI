@@ -14,13 +14,12 @@ const ValuesBox = ({ image, title, content }: { image: any, title: any, content:
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <Image 
-                src={image} 
-                alt="Image" 
-                width={imageWidth} 
-                height={imageHeight} 
-                layout="responsive"
-                className="transition-transform duration-3000 transform group-hover:scale-100" 
+            <Image
+                src={image}
+                alt="Image"
+                width={imageWidth} // Use dynamic width
+                height={imageHeight} // Use dynamic height
+                className="w-full h-auto transition-transform duration-3000 transform group-hover:scale-100"
             />
             <div 
                 className={`absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-start transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}

@@ -34,7 +34,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/layout.js"
-  ],
+, "i18n.js"  ],
   "exclude": [
     "node_modules"
   ]
