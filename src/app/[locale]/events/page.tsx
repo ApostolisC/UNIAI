@@ -1,5 +1,5 @@
 import '@/styles/globals.css';
-import EventBox from '../../components/events/event';
+import EventBox from '@/src/components/events/event';
 
 const Events = () => {
   return (

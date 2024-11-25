@@ -14,13 +14,21 @@ interface LocaleLayoutProps {
   };
 }
 
-export default async function LocaleLayout({
-  children, 
-  params: {locale}
-}: {
-  children: React.ReactNode;
-  params: {locale: string};
-}){
+export default async function LocaleLayout(
+  props: {
+    children: React.ReactNode;
+    params: Promise<{locale: string}>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
+  const {
+    children
+  } = props;
 
 
   if (!routing.locales.includes(locale as any)) {
@@ -33,17 +41,17 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
-        <header className="top-0 mb-0">
-          <Navigation />
-        </header>
-        <main>
-          <NextIntlClientProvider messages={messages}>
-            {children}
-          </NextIntlClientProvider>
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+        <NextIntlClientProvider messages={messages}>
+          <header className="top-0 mb-0">
+            <Navigation />
+          </header>
+          <main>
+              {children}
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

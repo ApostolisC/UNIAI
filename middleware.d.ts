@@ -1,3 +1,3 @@
-import createMiddleware from '@/src/middleware';
+import createMiddleware from '@/middleware';
 
 export = createMiddleware;

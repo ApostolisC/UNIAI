@@ -1,13 +1,15 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faGlobe, faAngleDown, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import { redirect } from 'next/navigation'
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+
+import {useTranslations} from 'next-intl';
+import {Link} from '@/src/i18n/routing';
 
 
 const Navigation:React.FC = () => {
@@ -53,6 +55,8 @@ const Navigation:React.FC = () => {
         
     };
 
+    const t = useTranslations('Navigation');
+
     return (
         <nav className="flex flex-col items-center py-5 border-b-2 border-[#71500b] w-full bg-[#1C1C1C]">
             <div className="flex justify-between items-center w-full px-5">
@@ -86,7 +90,7 @@ const Navigation:React.FC = () => {
                             className="relative mr-2"
                         >
                             <Link href="/" className="group inline-flex items-center text-inherit font-bold text-[16px] mr-[20px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">
-                                About Us
+                                {t('about-us')}
                                 <FontAwesomeIcon 
                                     icon={faAngleDown} 
                                     className="ml-2 text-white group-hover:text-[#FF8210] transition-colors duration-200 ease-in-out"
@@ -95,16 +99,16 @@ const Navigation:React.FC = () => {
                             {isSubmenuOpen && (
                                 <ul className="absolute right-2 bg-[#1C1C1C] shadow-lg rounded-md z-50">
                                     <div className="h-[20px] w-full"></div>
-                                    <li><Link href="/meet-the-team" className="block py-2 px-4 text-white text-wrap w-44 text-sm whitespace-nowrap transition-colors duration-200 ease-in-out border-t-2 border-[#FF8210] hover:text-[#A754C8]">Meet The Team</Link></li>
-                                    <li><Link href="/become-a-member" className="block py-2 px-4 text-white whitespace-nowrap text-sm transition-colors duration-200 ease-in-out border-t-[1px] border-[#FF8210] hover:text-[#A754C8]">Become a Member</Link></li>
+                                    <li><Link href="/meet-the-team" className="block py-2 px-4 text-white text-wrap w-44 text-sm whitespace-nowrap transition-colors duration-200 ease-in-out border-t-2 border-[#FF8210] hover:text-[#A754C8]">{t('meet-the-team')}</Link></li>
+                                    <li><Link href="/become-a-member" className="block py-2 px-4 text-white whitespace-nowrap text-sm transition-colors duration-200 ease-in-out border-t-[1px] border-[#FF8210] hover:text-[#A754C8]">{t('become-a-member')}</Link></li>
                                 </ul>
                             )}
                         </li>
-                        <li className="mr-7"><Link href="/become-a-partner" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">Become a Partner</Link></li>
-                        <li className="mr-7"><Link href="/uniai-network" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">UniAI.net</Link></li>
-                        <li className="mr-7"><Link href="/events" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">Our Events</Link></li>
-                        <li className="mr-7"><Link href="/blog" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">Articles</Link></li>
-                        <li className="mr-7"><Link href="https://makeathon.uniai.gr/" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">Makeathon</Link></li>
+                        <li className="mr-7"><Link href="/become-a-partner" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">{t('become-a-partner')}</Link></li>
+                        <li className="mr-7"><Link href="/uniai-network" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">{t('uniai-net')}</Link></li>
+                        <li className="mr-7"><Link href="/events" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">{t('our-events')}</Link></li>
+                        <li className="mr-7"><Link href="/blog" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">{t('articles')}</Link></li>
+                        <li className="mr-7"><Link href="https://makeathon.uniai.gr/" className="group inline-flex items-center text-inherit font-bold text-[16px] leading-[1.5] transition-colors duration-200 ease-in-out border-b-2 border-transparent py-2 px-0 whitespace-nowrap overflow-hidden text-ellipsis hover:border-[#A754C8] hover:text-[#FF8210]">{t('makeathon')}</Link></li>
                         <div
                             className="relative inline-block"
                             onMouseEnter={() => setLanguageSwitcherHovered(true)}
@@ -143,7 +147,7 @@ const Navigation:React.FC = () => {
                         className="py-2 px-5 border-b border-[#202020]"
                     >
                         <div className="flex justify-between items-center">
-                            <Link href="/" onClick={closeMenu}>About Us</Link>
+                            <Link href="/" onClick={closeMenu}>{t('about-us')}</Link>
                             <FontAwesomeIcon 
                                 icon={isMobileSubmenuOpen ? faMinus : faPlus} 
                                 className=" text-white group-hover:text-[#FF8210] transition-colors duration-200 ease-in-out"
@@ -152,17 +156,17 @@ const Navigation:React.FC = () => {
                         </div>
                         {isMobileSubmenuOpen && (
                             <ul className="flex flex-col mt-4">
-                                <li className="py-2 px-5 border-b border-[#202020]"><Link href="/meet-the-team" onClick={closeMenu}>Meet The Team</Link></li>
-                                <li className="py-2 px-5 border-b border-[#202020]"><Link href="/become-a-member" onClick={closeMenu}>Become a Member</Link></li>
+                                <li className="py-2 px-5 border-b border-[#202020]"><Link href="/meet-the-team" onClick={closeMenu}>{t('meet-the-team')}</Link></li>
+                                <li className="py-2 px-5 border-b border-[#202020]"><Link href="/become-a-member" onClick={closeMenu}>{t('become-a-member')}</Link></li>
                             </ul>
                         )}
                     </li>
 
-                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/become-a-partner" onClick={closeMenu}>Become a Partner</Link></li>
-                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/uniai-network" onClick={closeMenu}>UniAI.net</Link></li>
-                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/events" onClick={closeMenu}>Our Events</Link></li>
-                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/blog" onClick={closeMenu}>Articles</Link></li>
-                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="https://makeathon.uniai.gr/" onClick={closeMenu}>Makeathon</Link></li>
+                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/become-a-partner" onClick={closeMenu}>{t('become-a-partner')}</Link></li>
+                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/uniai-network" onClick={closeMenu}>{t('uniai-net')}</Link></li>
+                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/events" onClick={closeMenu}>{t('our-events')}</Link></li>
+                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="/blog" onClick={closeMenu}>{t('articles')}</Link></li>
+                    <li className="py-2 px-5 border-b border-[#202020]"><Link href="https://makeathon.uniai.gr/" onClick={closeMenu}>{t('makeathon')}</Link></li>
                 </ul>
             )}
         </nav>

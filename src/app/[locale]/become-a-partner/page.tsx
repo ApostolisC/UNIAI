@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import '../../styles/globals.css';
+import '@/styles/globals.css';
 import DynamicButton from '@/src/components/buttons/DynamicButton';
 import BenefitBox from '@/src/components/Benefits/box';
 

@@ -2,7 +2,7 @@
 // pages/BecomeMemberPage.tsx
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import ExpandableDepartmentList from '../../components/ExpandableDepartmentList/ExpandableDepartmentList';
+import ExpandableDepartmentList from '@/src/components/ExpandableDepartmentList/ExpandableDepartmentList';
 import { Team, teams } from '@/data/teams';
 
 const BecomeMemberPage = () => {
