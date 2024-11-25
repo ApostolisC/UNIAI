@@ -9,7 +9,6 @@ import DynamicButton from '@/src/components/buttons/DynamicButton';
 import {useTranslations} from 'next-intl';
 import {Link} from '@/src/i18n/routing';
 
-import {setRequestLocale} from 'next-intl/server';
 
 interface PageProps {
   params: {
@@ -17,10 +16,8 @@ interface PageProps {
   };
 }
 
-export default function Page({params: {lng}}: PageProps) {
+export default function HomePage() {
   
-
-
   const t = useTranslations('HomePage');
   
   const handleRedirect = (url: string) => {
