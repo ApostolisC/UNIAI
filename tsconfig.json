@@ -31,15 +31,4 @@
 
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/layout.js", "app/blog/index.js"],
   "exclude": ["node_modules"]
-
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "app/layout.js"
-, "i18n.js"  ],
-  "exclude": [
-    "node_modules"
-  ]
 }
