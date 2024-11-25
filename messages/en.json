@@ -1,0 +1,82 @@
+{
+    "HomePage": {
+        "titles":{
+          "about-us":"About Us",
+          "our-values": "Our Values"
+        },
+        "buttons":{
+          "become-a-partner":"Become a Partner"
+        },
+        "paragraphs": {
+        
+        }
+    },
+    "Navigation": {
+        "about-us": "About Us",
+        "meet-the-team": "Meet the Team",
+        "become-a-member": "Become a Member",
+        "become-a-partner": "Become a Partner",
+        "uniai-net": "UniAI.net",
+        "our-events": "Our Events",
+        "articles": "Articles",
+        "makeathon": "Makeathon"
+    },
+    "Footer": {
+        "follow-us-on": "Follow Us On:",
+        "newsletter-form": {
+          "title": "UniAI's Newsletter",
+          "first-name": "First Name",
+          "last-name": "Last Name",
+          "email": "Email",
+          "consent": "By subscribing, you agree to receive our newsletter and updates; you can unsubscribe at any time.",
+          "submit-button": "Submit"
+        },
+        "about-us":"About Us",
+        "become-a-member":"Become a Member",
+        "become-a-partner":"Become a Partner"
+
+    },
+    "Components": {
+        "about-us": {
+            "who-we-are": {
+              "title": "Who we are",
+              "content": "UniAI is a student initiative on artificial intelligence in Greece which aims to create a community that promotes education and innovation on AI. Our mission is to connect students, organizations, companies and AI enthusiasts through a variety of events and projects that enable the exchange of ideas and information around AI."
+            },
+            "vision": {
+              "title": "Vision",
+              "content": "Connecting people and ideas to promote innovation and education with Artificial Intelligence."
+            },
+            "mission": {
+              "title": "Mission",
+              "content": "To create a student organization that promotes and enhances a culture of AI engagement and a strong network for the educational and innovative ecosystem."
+            }
+        },
+        "our-values":{
+            "innovation": {
+              "title": "Innovation",
+              "content": "Foster innovation driven members, supporting creativity, enable revolutionary solutions."
+            },
+            "integrity": {
+              "title": "Integrity",
+              "content": "Commitment to honesty, transparency, and accountability in all activities & interactions. It means ensuring that UniAI’s mission and goals are pursued with sincerity and without compromise on ethical standards."
+            },
+            "trust": {
+              "title": "Trust",
+              "content": "All members are able to work well with everyone with solidarity and no stress by supporting open communication between teams. We want our organization to be a safe place for all members."
+            },
+            "empowerment": {
+              "title": "Empowerment",
+              "content": "Empower students, ideas, initiatives, members, appreciating abilities & goals, helping students to feel confident on AI."
+            },
+            "sustainability": {
+              "title": "Sustainability",
+              "content": "Responsible and balanced use of resources, considering the environmental, social and economic factors to create a more stable and equitable future."
+            },
+            "inclusivity": {
+              "title": "Inclusivity",
+              "content": "Fair treatment and respect for every person. At the same time we promote equality, justice, respect for every way of thinking and living, acceptance of the different and everyone's right to participate. As an organization we embrace diversity."
+            }
+
+        }
+    }
+}
