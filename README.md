@@ -1,8 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is the updated website of UniAI, built in Next.js
 
 ## Getting Started
+First, clone the repository on your machine.
 
-First, run the development server:
+Then, in order to run the development server:
 
 ```bash
 npm run dev
@@ -13,12 +14,13 @@ pnpm dev
 # or
 bun dev
 ```
+Command should run inside the cloned folder
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Any new updates in the code files will result in auto-updates of the server, so there is no need to restart the server.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
 
 ## Learn More
 
@@ -31,6 +33,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Synching files (push) to github branch will result in website re-deployment in Vercel.
+Link to vercel deployment can be found in the About section of the repository.

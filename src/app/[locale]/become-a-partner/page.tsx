@@ -24,6 +24,7 @@ const BecomePartnerPage = () => {
               textColor="#fff" 
               backgroundColor="#A754C8" 
               hoverColor="#FF8210"
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeTVgzbzYjP5UTHzWZ4P4u0ujybga1Oa226SrlgT3xzT4WIig/viewform', "_blank")}
             >
               Become a Partner
             </DynamicButton>
