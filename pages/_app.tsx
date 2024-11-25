@@ -10,9 +10,9 @@ function App({ Component, pageProps }: AppProps) {
     const { locale } = pageProps;
 
     return (
-        <RootLayout params={{
-            locale: ''
-        }}>
+        <RootLayout params={Promise.resolve({
+            locale: locale || ''
+        })}>
             <Component {...pageProps}/>
         </RootLayout>
     );
