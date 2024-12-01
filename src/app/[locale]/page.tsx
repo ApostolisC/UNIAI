@@ -6,6 +6,7 @@ import AboutUsBox from '@/src/components/AboutUs/box';
 import ValuesBox from '@/src/components/Values/box';
 import DynamicButton from '@/src/components/buttons/DynamicButton';
 
+
 import {useTranslations} from 'next-intl';
 import {Link} from '@/src/i18n/routing';
 
@@ -22,8 +23,6 @@ export default function HomePage() {
   const t2 = useTranslations('Components');
   
   
-
-
   return (
     (
       <>
@@ -62,7 +61,7 @@ export default function HomePage() {
                 backgroundColor="#FF8210"
                 hoverColor="#D56500"
                 >
-                  {t('buttons.become-a-partner')}
+                  {t("buttons.become-a-partner")}
                 </DynamicButton>
               </Link>
             </div>
@@ -81,6 +80,7 @@ export default function HomePage() {
           <div className="flex flex-col items-center justify-center space-y-4 mx-auto max-w-[80vw]">
 
             <Link href="/become-a-partner">
+
               <DynamicButton
                 borderColor="#fff"
                 textColor="#fff"
