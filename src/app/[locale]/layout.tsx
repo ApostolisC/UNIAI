@@ -4,7 +4,6 @@ import {notFound} from 'next/navigation';
 import {routing} from '@/src/i18n/routing';
 import Navigation from '@/src/components/Navigation/navigation';
 import Footer from '@/src/components/Footer/footer';
- 
 import { ReactNode } from 'react';
 
 interface LocaleLayoutProps {
@@ -14,29 +13,16 @@ interface LocaleLayoutProps {
   };
 }
 
-export default async function LocaleLayout(
-  props: {
-    children: React.ReactNode;
-    params: Promise<{locale: string}>;
-  }
-) {
-  const params = await props.params;
-
-  const {
-    locale
-  } = params;
-
-  const {
-    children
-  } = props;
-
-
+async function fetchMessages(locale: string) {
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
+  return await getMessages();
+}
 
-
-  const messages = await getMessages();
+export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
+  const { locale } = params;
+  const messages = await fetchMessages(locale);
 
   return (
     <html lang={locale}>
@@ -46,7 +32,7 @@ export default async function LocaleLayout(
             <Navigation />
           </header>
           <main>
-              {children}
+            {children}
           </main>
           <footer>
             <Footer />
