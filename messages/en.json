@@ -1,82 +1,193 @@
 {
-    "HomePage": {
-        "titles":{
-          "about-us":"About Us",
-          "our-values": "Our Values"
-        },
-        "buttons":{
-          "become-a-partner":"Become a Partner"
-        },
-        "paragraphs": {
-        
-        }
+  "Navigation": {
+    "about-us": "About Us",
+    "meet-the-team": "Meet the Team",
+    "become-a-member": "Become a Member",
+    "become-a-partner": "Become a Partner",
+    "uniai-net": "UniAI.net",
+    "our-events": "Our Events",
+    "articles": "Articles",
+    "makeathon": "Makeathon"
     },
-    "Navigation": {
-        "about-us": "About Us",
-        "meet-the-team": "Meet the Team",
-        "become-a-member": "Become a Member",
-        "become-a-partner": "Become a Partner",
-        "uniai-net": "UniAI.net",
-        "our-events": "Our Events",
-        "articles": "Articles",
-        "makeathon": "Makeathon"
+  "Footer": {
+    "follow-us-on": "Follow Us On:",
+    "newsletter-form": {
+      "title": "UniAI's Newsletter",
+      "first-name": "First Name",
+      "last-name": "Last Name",
+      "email": "Email",
+      "consent": "By subscribing, you agree to receive our newsletter and updates; you can unsubscribe at any time.",
+      "submit-button": "Submit"
     },
-    "Footer": {
-        "follow-us-on": "Follow Us On:",
-        "newsletter-form": {
-          "title": "UniAI's Newsletter",
-          "first-name": "First Name",
-          "last-name": "Last Name",
-          "email": "Email",
-          "consent": "By subscribing, you agree to receive our newsletter and updates; you can unsubscribe at any time.",
-          "submit-button": "Submit"
-        },
-        "about-us":"About Us",
-        "become-a-member":"Become a Member",
-        "become-a-partner":"Become a Partner"
-
+    "about-us":"About Us",
+    "become-a-member":"Become a Member",
+    "become-a-partner":"Become a Partner"
+  },  
+  "HomePage": {
+    "titles":{
+      "about-us":"About Us",
+      "our-values": "Our Values"
     },
-    "Components": {
-        "about-us": {
-            "who-we-are": {
-              "title": "Who we are",
-              "content": "UniAI is a student initiative on artificial intelligence in Greece which aims to create a community that promotes education and innovation on AI. Our mission is to connect students, organizations, companies and AI enthusiasts through a variety of events and projects that enable the exchange of ideas and information around AI."
-            },
-            "vision": {
-              "title": "Vision",
-              "content": "Connecting people and ideas to promote innovation and education with Artificial Intelligence."
-            },
-            "mission": {
-              "title": "Mission",
-              "content": "To create a student organization that promotes and enhances a culture of AI engagement and a strong network for the educational and innovative ecosystem."
-            }
-        },
-        "our-values":{
-            "innovation": {
-              "title": "Innovation",
-              "content": "Foster innovation driven members, supporting creativity, enable revolutionary solutions."
-            },
-            "integrity": {
-              "title": "Integrity",
-              "content": "Commitment to honesty, transparency, and accountability in all activities & interactions. It means ensuring that UniAI’s mission and goals are pursued with sincerity and without compromise on ethical standards."
-            },
-            "trust": {
-              "title": "Trust",
-              "content": "All members are able to work well with everyone with solidarity and no stress by supporting open communication between teams. We want our organization to be a safe place for all members."
-            },
-            "empowerment": {
-              "title": "Empowerment",
-              "content": "Empower students, ideas, initiatives, members, appreciating abilities & goals, helping students to feel confident on AI."
-            },
-            "sustainability": {
-              "title": "Sustainability",
-              "content": "Responsible and balanced use of resources, considering the environmental, social and economic factors to create a more stable and equitable future."
-            },
-            "inclusivity": {
-              "title": "Inclusivity",
-              "content": "Fair treatment and respect for every person. At the same time we promote equality, justice, respect for every way of thinking and living, acceptance of the different and everyone's right to participate. As an organization we embrace diversity."
-            }
-
-        }
+    "buttons":{
+      "become-a-partner":"Become a Partner"
+    },
+    "paragraphs": {
+    
     }
+  },
+  "BecomeMemberPage": {
+    "titles": {
+      "forMembers": "For Members"
+    },
+    "intro": {
+      "line1": "We are ambitious AI lovers who aim to become part of the AI ecosystem and",
+      "line2": "can become a part of the journey!",
+      "line3": "Our long-term vision and mission are the main ingredients that push us towards our goals without losing our way.",
+      "you": "YOU",
+      "departments": "Our organisation is divided into different departments based on responsibilities, as outlined below."
+    }
+  },
+  "EventsPage": {
+    "title": "UniAI Events"
+  },
+  "Components": {
+    "about-us": {
+        "who-we-are": {
+          "title": "Who we are",
+          "content": "UniAI is a student initiative on artificial intelligence in Greece which aims to create a community that promotes education and innovation on AI. Our mission is to connect students, organizations, companies and AI enthusiasts through a variety of events and projects that enable the exchange of ideas and information around AI."
+        },
+        "vision": {
+          "title": "Vision",
+          "content": "Connecting people and ideas to promote innovation and education with Artificial Intelligence."
+        },
+        "mission": {
+          "title": "Mission",
+          "content": "To create a student organization that promotes and enhances a culture of AI engagement and a strong network for the educational and innovative ecosystem."
+        }
+    },
+    "our-values":{
+        "innovation": {
+          "title": "Innovation",
+          "content": "Foster innovation driven members, supporting creativity, enable revolutionary solutions."
+        },
+        "integrity": {
+          "title": "Integrity",
+          "content": "Commitment to honesty, transparency, and accountability in all activities & interactions. It means ensuring that UniAI’s mission and goals are pursued with sincerity and without compromise on ethical standards."
+        },
+        "trust": {
+          "title": "Trust",
+          "content": "All members are able to work well with everyone with solidarity and no stress by supporting open communication between teams. We want our organization to be a safe place for all members."
+        },
+        "empowerment": {
+          "title": "Empowerment",
+          "content": "Empower students, ideas, initiatives, members, appreciating abilities & goals, helping students to feel confident on AI."
+        },
+        "sustainability": {
+          "title": "Sustainability",
+          "content": "Responsible and balanced use of resources, considering the environmental, social and economic factors to create a more stable and equitable future."
+        },
+        "inclusivity": {
+          "title": "Inclusivity",
+          "content": "Fair treatment and respect for every person. At the same time we promote equality, justice, respect for every way of thinking and living, acceptance of the different and everyone's right to participate. As an organization we embrace diversity."
+        }
+    },
+    "teams": {
+      "founders": {
+        "title": "Founders",
+        "description": "The founding members of the initiative."
+      },
+      "board": {
+        "title": "Board",
+        "description": "Responsible for overseeing and guiding the organization."
+      },
+      "legalAndFinance": {
+        "title": "Legal and Finance",
+        "description": "The L & F department is responsible for the legal and financial matters of the organisation. Specifically, department members are in charge of managing and allocating the organisation’s financial resources for the activities of other departments. Additionally, this department handles any grant and partnership contracts, and takes on the organisation’s border compliance with the legislative framework. If you enjoy seeing the big picture and have an interest in the legal and financial field, this department is for you! Remember, if this sounds intriguing but you feel you may not have enough prior knowledge, don’t worry! Learning is part of the process!"
+      },
+      "marketingAndSocialMedia": {
+        "title": "Marketing & Social Media",
+        "description": "The Marketing and Social Media department is responsible for creating the UniAI brand, taking care of both the organisation’s aesthetics and graphics, as well as its online presence. The creativity duties of the department include generating content for social media, designing campaigns to promote the organisation’s vision and mission, as well as creating merch for our members. We are looking for people who are eager to explore the world of marketing: design skills and marketing knowledge, interest in social media, passion for research, writing skills and communication skills. Skills in streaming, photography and design are highly valued."
+      },
+      "partnersAndSponsors": {
+        "title": "Partners & Sponsors",
+        "description": "None of the things we try to achieve would be possible without our valuable partnerships. From providing much-needed snacks during breaks in our activities, to spreading our initiatives across different communication channels and partnering with companies for grand projects, the Partners & Sponsors team takes action. If you have communication skills (or want to develop them), enjoy interacting and communicating with people, have an interest in sales, and above all believe you can communicate UniAI’s vision to the outside world, we want you on the team!"
+      },
+      "itAndData": {
+        "title": "IT & Data",
+        "description": "The role of the department is twofold. On the one hand, the technical part (IT) has as its main task the creation, maintenance and development of our website, the organisation and management of internal and external communication channels (Slack, Drive, and Discord respectively), while at the same time, it aspires to develop a very creative development part, whose possibilities are limited only by the ideas of its members! On the other hand, the department is responsible for analysing data coming from other departments in order to create reports for stakeholders."
+      },
+      "community": {
+        "title": "Community",
+        "description": "The driving force of UniAI is its members, and the Community department is there for them. The department’s goal is to strengthen the sense of community and build bonds within our community, by organising internal activities that empower us as a team and by taking care of selecting suitable new members according to each department’s requirements."
+      },
+      "education": {
+        "title": "Education",
+        "description": "The Education department is responsible for gathering and creating educational materials related to artificial intelligence and organising relevant workshops. At the same time, the department is responsible for curating talks and taking care of the content of educational or informative presentations and posts."
+      },
+      "eventsAndExperience": {
+        "title": "Events & Experience",
+        "description": "The events and experience team is responsible for planning and organising our events. Its responsibilities include finding and booking suitable venues for activities, the broader technical coordination of the events (logistics), proposing and experimenting with new projects, and organising the largest event we aim for, our first Makeathon."
+      },
+      "makeathonLead": {
+        "title": "Makeathon Lead",
+        "description": "Responsible for leading and organising the Makeathon event."
+      }
+    },
+    "events": 
+    [
+      {
+        "title": "AI Open Seminar",
+        "text": "Topics: Computer Vision, Commands as AI Conversations",
+        "date": "19 January 2024",
+        "location": "Athens University of Economics and Business",
+        "position": "left"
+      },
+      {
+        "title": "AI Open Seminar",
+        "text": "With 3 esteemed speakers from the field of AI Research, we held our first sold-out AI Open Seminar, gathering 60 participants from different universities",
+        "date": "15 December 2023",
+        "location": "Athens University of Economics and Business",
+        "position": "right"
+      },
+      {
+        "title": "First Pint of AI",
+        "text": "In a relaxed environment we got to learn and share with the world all about art and AI at our first Pint of AI: Art Edition",
+        "date": "28 November 2023",
+        "location": "hiVerid Mind Art Exhibition",
+        "position": "left"
+      },
+      {
+        "title": "Real time predictions using an AI chatbot (Workshop)",
+        "text": "Our first external Workshop took place during the Second AI Forum",
+        "date": "04 November 2023",
+        "location": "National Hellenic Research Foundation",
+        "position": "right"
+      },
+      {
+        "title": "How to hack an LLM? (Workshop)",
+        "text": "First Internal Training on AI",
+        "date": "18 October 2023",
+        "location": "ACEin",
+        "position": "left"
+      },
+      {
+        "title": "Winter Semester Kick-off",
+        "text": "The official start of UniAI’s first generation members: 30 students from 8 different universities came together to embark on a creative journey of education and innovation with AI.",
+        "date": "30 September 2023",
+        "location": "Myrtillo Café",
+        "position": "right"
+      }
+    ],
+    "qualities": {
+      "intro": "If you combine the following qualities, you are the one we are looking for!",
+      "list": {
+        "item1": "Passion for Artificial Intelligence",
+        "item2": "Team spirit",
+        "item3": "Ready to dedicate at least 6 hours weekly for the initiative",
+        "item4": "Committed and motivated to promote our initiative",
+        "item5": "Motivated to bring change in Greece",
+        "item6": "Open communication and collaboration"
+      }
+    }
+  }
 }
