@@ -6,6 +6,7 @@ import { Team } from '@/data/teams'; // Adjust path as needed
 import { Person } from '@/data/uniaiMembersData'; // Adjust path as needed
 
 const MeetTheTeamPage = () => {
+
     const [teams, setTeams] = useState<Team[]>([]);
     const [people, setPeople] = useState<Person[]>([]);
     const [isPhone, setIsPhone] = useState(false);
@@ -71,6 +72,7 @@ const MeetTheTeamPage = () => {
                 <p className="mt-4 text-wrap text-[22px] text-left">In any organization, people are the most important element in achieving its vision. Meet the team behind UniAI, whose members share a passion and enthusiasm for AI!</p>
             </div>
 
+
             {/* Display Teams and Members */}
             {Object.entries(teamsWithMembers).map(([teamTitle, members], index) => (
                 <div key={index} className="p-6 w-full md:w-[75vw] mx-auto text-left">
@@ -81,10 +83,16 @@ const MeetTheTeamPage = () => {
                     >
                         {members.map((person) => (
                             <div key={person.id} className="max-w-[15rem] w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                                <PersonCard 
-                                    person={{ ...person, name: person.name_eng, position: person.position ?? person.university_eng }} 
-                                    borderColor={borderColors[Number(person.id) % borderColors.length]} 
-                                />
+                                {(() => {
+                                    return (
+                                        <PersonCard
+                                            // pass person but with name_gr or name_en based on locale
+                                            person={person}
+                                        
+                                            borderColor={borderColors[Number(person.id) % borderColors.length]} 
+                                        />
+                                    );
+                                })()}
                             </div>
                         ))}
                     </div>

@@ -21,7 +21,7 @@ async function fetchMessages(locale: string) {
 }
 
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
-  const { locale } = params;
+  const { locale } = await params;
   const messages = await fetchMessages(locale);
 
   return (
