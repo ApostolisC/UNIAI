@@ -12,7 +12,7 @@ interface Person {
     image: string;
     name_gr: string;
     name_eng: string
-    university: string;
+    university_gr: string;
     university_eng: string;
     linkedin: string;
     team: {
@@ -33,7 +33,7 @@ const PersonCard: React.FC<PersonCardProps> = ({ person, borderColor }) => {
     const locale = pathname ? pathname.split('/')[1] : 'en';
 
     const name = locale === 'en' ? person.name_eng : person.name_gr;
-    var university = locale === 'en' ? person.university_eng : person.university;
+    var university = locale === 'en' ? person.university_eng : person.university_gr;
 
     //TODO remove the following line after implementing the translation for greek
     // also change university above to const university
