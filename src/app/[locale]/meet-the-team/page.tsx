@@ -4,9 +4,12 @@ import Image from 'next/image';
 import PersonCard from '@/src/components/PersonCard/PersonCard';
 import { Team } from '@/data/teams'; // Adjust path as needed
 import { Person } from '@/data/uniaiMembersData'; // Adjust path as needed
+import { useTranslations } from 'next-intl'; 
+
 
 const MeetTheTeamPage = () => {
 
+    const t = useTranslations('MeetTheTeamPage');
     const [teams, setTeams] = useState<Team[]>([]);
     const [people, setPeople] = useState<Person[]>([]);
     const [isPhone, setIsPhone] = useState(false);
@@ -64,12 +67,16 @@ const MeetTheTeamPage = () => {
 
                 {/* Right Column (Heading) */}
                 <div className="w-full md:w-1/2 flex justify-center items-center mb-10">
-                    <h2 className="text-5xl md:text-5xl lg:text-5xl font-bold text-center">Meet The Team</h2>
+                    <h2 className="text-5xl md:text-5xl lg:text-5xl font-bold text-center">
+                        {t('meet-the-team')}
+                    </h2>
                 </div>
             </div>
 
             <div className="p-6 w-[95vw] md:w-[70vw] mx-auto text-left">
-                <p className="mt-4 text-wrap text-[22px] text-left">In any organization, people are the most important element in achieving its vision. Meet the team behind UniAI, whose members share a passion and enthusiasm for AI!</p>
+                <p className="mt-4 text-wrap text-[22px] text-left">
+                    {t('intro')}
+                </p>
             </div>
 
 
