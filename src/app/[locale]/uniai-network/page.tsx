@@ -5,8 +5,10 @@ import Image from 'next/image';
 import PersonCard from '@/src/components/PersonCard/PersonCard';
 import people from '@/data/mentorsData'; // Ensure you import the people data
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl'; 
 
 const UniAINetwork = () => {
+  const t = useTranslations('UniAiNet');
   // Define the colors you want to alternate between
   const borderColors = ['#9202D8', '#FF8210']; // Purple and Yellow
 
@@ -52,7 +54,9 @@ const UniAINetwork = () => {
       </div>
 
       <div className="p-6 w-[70vw] mx-auto text-left">
-        <p className="mt-4 text-wrap text-[22px] text-left">The purpose of UniAI is to connect people and ideas to promote innovation and improve human life. This cannot be achieved without partnering with people and organisations that share our vision. It is those who make up UniAI.net.</p>
+        <p className="mt-4 text-wrap text-[22px] text-left">
+          {t('description')}
+        </p>
       </div>
 
       <div className="mt-14">

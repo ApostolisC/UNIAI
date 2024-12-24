@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faGlobe, faAngleDown, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
@@ -14,6 +14,7 @@ import {Link} from '@/src/i18n/routing';
 
 const Navigation:React.FC = () => {
     const router = useRouter();
+    const pathname = usePathname();
     const [isHovered, setIsHovered] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
@@ -51,7 +52,17 @@ const Navigation:React.FC = () => {
     };
 
     const handleLanguageChange = (locale: string) => {
-        router.push(`/${locale}`);
+        if (!pathname) return;
+        const segments = pathname.split('/').filter(Boolean); // Remove empty segments
+
+        if (segments[0] === 'en' || segments[0] === 'el') {
+            segments[0] = locale; // Replace locale
+        } else {
+            segments.unshift(locale); // Add locale if missing
+        }
+
+        const newPath = '/' + segments.join('/');
+        router.push(newPath); // Redirect to the new path
         
     };
 
