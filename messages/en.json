@@ -89,8 +89,8 @@
     "BecomePartnerPage":{
       "title":"For Partners",
       "paragraphs":{
-        "par1":"Our non-profit organisation, UniAI, aspires to undertake a multitude of actions that provide the opportunity for different types of collaborations with various entities. You can contribute to our initiative and the realisation of our vision in many ways:, such as:",
-        "par2":"We would be delighted to discuss a long-term collaboration with you!"
+        "part1":"Our non-profit organisation, UniAI, aspires to undertake a multitude of actions that provide the opportunity for different types of collaborations with various entities. You can contribute to our initiative and the realisation of our vision in many ways:, such as:",
+        "part2":"We would be delighted to discuss a long-term collaboration with you!"
       },
       "bullets":{
         "b1":"Challenge creator for the Makeathon (an innovation competition using AI)",

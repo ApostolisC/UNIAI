@@ -51,7 +51,7 @@ const BecomePartnerPage = () => {
       <div className="container mx-auto px-4 border-l-2 md:ml-[16vw] ml-4 md:w-[70vw] w-[90%] my-2">
         <div className="text-lg text-gray-900 dark:text-gray-200 leading-relaxed">
           <p>
-            {t('paragraphs.par1')}
+            {t('paragraphs.part1')}
           </p>
           <br />
           <ul className="list-disc ml-6 mb-6 text-gray-900 dark:text-gray-200">
@@ -63,7 +63,7 @@ const BecomePartnerPage = () => {
             <li>{t('bullets.b6')}</li>
           </ul>
           <p className="text-lg text-gray-900 dark:text-gray-200">
-            {t('paragraphs.par2')}
+            {t('paragraphs.part2')}
           </p>
         </div>
       </div>
