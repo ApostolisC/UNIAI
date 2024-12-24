@@ -1,6 +1,6 @@
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages, setRequestLocale} from 'next-intl/server';
-import {notFound} from 'next/navigation';
+import NotFound from '@/src/app/[locale]/not-found';
 import {routing} from '@/src/i18n/routing';
 import Navigation from '@/src/components/Navigation/navigation';
 import Footer from '@/src/components/Footer/footer';
@@ -14,19 +14,28 @@ interface LocaleLayoutProps {
 }
 
 async function fetchMessages(locale: string) {
-  if (!routing.locales.includes(locale as any)) {
-    notFound();
+  try {
+    if (!routing.locales.includes(locale as any)) {
+      return null;
+    }
+    return await getMessages();
+  } catch (error) {
+    console.error('Error fetching messages:', error);
+    return null; // Return null to indicate failure
   }
-  return await getMessages();
 }
 
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const { locale } = await params;
   const messages = await fetchMessages(locale);
+  if (messages === null) {
+    return <NotFound />;
+  }
 
   return (
     <html lang={locale}>
       <body>
+        
         <NextIntlClientProvider messages={messages}>
           <header className="top-0 mb-0">
             <Navigation />

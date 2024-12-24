@@ -8,18 +8,19 @@ import { usePathname } from 'next/navigation';
 import '@/styles/globals.css';
 
 interface Person {
-    id: string,
+    id?: string;
     image: string;
     name_gr: string;
-    name_eng: string
-    university_gr: string;
-    university_eng: string;
+    name_en: string
+    university_gr?: string;
+    university_en?: string;
     linkedin: string;
-    team: {
+    team?: {
         name: string;
         position: string;
     }[];
-    position?: null;
+    position_gr?: string;
+    position_en?: string;
 }
 
 interface PersonCardProps {
@@ -32,12 +33,12 @@ const PersonCard: React.FC<PersonCardProps> = ({ person, borderColor }) => {
     const pathname = usePathname();
     const locale = pathname ? pathname.split('/')[1] : 'en';
 
-    const name = locale === 'en' ? person.name_eng : person.name_gr;
-    var university = locale === 'en' ? person.university_eng : person.university_gr;
+    const name = locale === 'en' ? person.name_en : person.name_gr;
+    var university = locale === 'en' ? person.university_en : person.university_gr;
 
     //TODO remove the following line after implementing the translation for greek
     // also change university above to const university
-    var university = person.university_eng;
+    var university = person.university_en;
 
 
 

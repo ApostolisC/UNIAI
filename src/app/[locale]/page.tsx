@@ -19,6 +19,7 @@ interface PageProps {
 
 export default function HomePage() {
   
+  
   const t = useTranslations('HomePage');
   const t2 = useTranslations('Components');
   
