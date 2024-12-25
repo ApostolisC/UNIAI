@@ -77,7 +77,52 @@
               "content": "Fair treatment and respect for every person. At the same time we promote equality, justice, respect for every way of thinking and living, acceptance of the different and everyone's right to participate. As an organization we embrace diversity."
             }
 
-        }
+        },
+        "events": 
+            [
+            {
+              "title": "AI Open Seminar",
+              "text": "Topics: Computer Vision, Commands as AI Conversations",
+              "date": "19 January 2024",
+              "location": "Athens University of Economics and Business",
+              "position": "left"
+            },
+            {
+              "title": "AI Open Seminar",
+              "text": "With 3 esteemed speakers from the field of AI Research, we held our first sold-out AI Open Seminar, gathering 60 participants from different universities",
+              "date": "15 December 2023",
+              "location": "Athens University of Economics and Business",
+              "position": "right"
+            },
+            {
+              "title": "First Pint of AI",
+              "text": "In a relaxed environment we got to learn and share with the world all about art and AI at our first Pint of AI: Art Edition",
+              "date": "28 November 2023",
+              "location": "hiVerid Mind Art Exhibition",
+              "position": "left"
+            },
+            {
+              "title": "Real time predictions using an AI chatbot (Workshop)",
+              "text": "Our first external Workshop took place during the Second AI Forum",
+              "date": "04 November 2023",
+              "location": "National Hellenic Research Foundation",
+              "position": "right"
+            },
+            {
+              "title": "How to hack an LLM? (Workshop)",
+              "text": "First Internal Training on AI",
+              "date": "18 October 2023",
+              "location": "ACEin",
+              "position": "left"
+            },
+            {
+              "title": "Winter Semester Kick-off",
+              "text": "The official start of UniAI’s first generation members: 30 students from 8 different universities came together to embark on a creative journey of education and innovation with AI.",
+              "date": "30 September 2023",
+              "location": "Myrtillo Café",
+              "position": "right"
+            }
+            ]
     },
     "MeetTheTeamPage": {
       "meet-the-team": "Meet The Team",
@@ -107,5 +152,31 @@
         "description3":"Collaborating with us opens the door to various types of interaction, such as the possibility of creating challenges for our Makeathons, participating in seminars and conferences, or hosting networking workshops with our members. We are open to all kinds of collaboration proposals and look forward to hearing your creative ideas!",
         "description4": "Access our member network of motivated students from diverse backgrounds, all of whom share an understanding of new technologies and a passion for innovation and experimentation with them"
       }
+    },
+    "BecomeMemberPage": {
+      "titles": {
+        "forMembers": "For Members"
+      },
+      "intro": {
+        "line1": "We are ambitious AI lovers who aim to become part of the AI ecosystem and",
+        "line2": "can become a part of the journey!",
+        "line3": "Our long-term vision and mission are the main ingredients that push us towards our goals without losing our way.",
+        "you": "YOU",
+        "departments": "Our organisation is divided into different departments based on responsibilities, as outlined below. In all departments, the creativity of our members is strongly promoted and encouraged by enthusiastically supporting new initiatives and ideas! Specifically, the departments and their (indicative) responsibilities are:"
+      },
+      "qualities": {
+        "intro": "If you combine the following qualities, you are the one we are looking for!",
+        "list": {
+          "item1": "Passion for Artificial Intelligence",
+          "item2": "Team spirit",
+          "item3": "Ready to dedicate at least 6 hours weekly for the initiative",
+          "item4": "Committed and motivated to promote our initiative",
+          "item5": "Motivated to bring change in Greece",
+          "item6": "Open communication and collaboration"
+        }
+      }
+    },
+    "EventsPage": {
+      "title": "UniAI Events"
     }
 }

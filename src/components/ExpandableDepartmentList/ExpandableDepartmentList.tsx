@@ -7,9 +7,10 @@ import { Team } from '../../../data/teams';
 interface ExpandableDepartmentListProps {
     departments: Team[];
     excludedDepartments?: string[]; // Departments to exclude by title
+    locale: 'en' | 'el';
 }
 
-const ExpandableDepartmentList: React.FC<ExpandableDepartmentListProps> = ({ departments}) => {
+const ExpandableDepartmentList: React.FC<ExpandableDepartmentListProps> = ({ departments, locale}) => {
     const [expandedDepartmentTitle, setExpandedDepartmentTitle] = useState<string | null>(null);
 
     const filteredDepartments = departments.filter(department => department.title !== "Founders" && department.title !== "Board" && department.title !== "Makeathon Lead" );
@@ -32,6 +33,8 @@ const ExpandableDepartmentList: React.FC<ExpandableDepartmentListProps> = ({ dep
                                 : color2
                             : '#202020';
 
+                        const description = locale === 'en' ? department.description_eng : department.description_gr;
+
                         return (
                             <li
                                 key={department.title}
@@ -52,7 +55,7 @@ const ExpandableDepartmentList: React.FC<ExpandableDepartmentListProps> = ({ dep
                                 </button>
                                 {isExpanded && (
                                     <div className="p-4 text-xl bg-gray-100 text-gray-700 rounded-b-lg">
-                                        {department.description.split('\n').map((line, index) => (
+                                        {description.split('\n').map((line, index) => (
                                             <p key={index} className="mb-2">{line}</p>
                                         ))}
                                     </div>

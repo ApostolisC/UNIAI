@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
-interface EventProps {
+export interface EventProps {
   icon: string;
   title: string;
   text: string;
